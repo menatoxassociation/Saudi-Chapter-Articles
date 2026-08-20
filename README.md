@@ -1,0 +1,1404 @@
+[paracetamol-chapter-3 2.html](https://github.com/user-attachments/files/31272308/paracetamol-chapter-3.2.html)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Paracetamol (Acetaminophen) — Clinical Toxicology in Saudi Arabia, Chapter 2</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EDEFEA;
+  --paper-2:#F7F8F5;
+  --ink:#16232B;
+  --slate:#5A6C76;
+  --hair:#CDD4CC;
+  --nac:#0F766E;         /* antidote teal */
+  --napqi:#C81D4E;       /* hazard magenta-crimson */
+  --amber:#C08519;       /* drug / concentration */
+  --grid:#DDE2DA;
+  --shadow:0 1px 0 rgba(22,35,43,.06), 0 12px 30px -22px rgba(22,35,43,.5);
+  --mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+  --disp:'Archivo',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --body:'Source Serif 4',Georgia,'Times New Roman',serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-size:17px;line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+  background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);
+  background-size:34px 34px;background-position:-1px -1px;
+}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(120% 80% at 50% 0%,rgba(237,239,234,.35),rgba(237,239,234,.94) 60%);pointer-events:none;z-index:0}
+.wrap{position:relative;z-index:1;max-width:1180px;margin:0 auto;padding:0 20px 80px}
+
+/* ---------- top bar ---------- */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(237,239,234,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--hair)}
+.topbar-in{max-width:1180px;margin:0 auto;padding:9px 20px;display:flex;align-items:center;gap:14px;justify-content:space-between}
+.brand{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate)}
+.brand b{color:var(--ink);font-weight:600}
+.progress{height:3px;background:var(--hair)}
+.progress i{display:block;height:100%;width:0;background:var(--napqi);transition:width .12s linear}
+.jump{font-family:var(--mono);font-size:11px;border:1px solid var(--hair);background:var(--paper-2);color:var(--ink);border-radius:2px;padding:5px 8px;max-width:46vw}
+
+/* ---------- hero ---------- */
+.hero{padding:64px 0 40px;border-bottom:1px solid var(--hair)}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--napqi);margin:0 0 18px}
+.eyebrow span{color:var(--slate)}
+h1{font-family:var(--disp);font-weight:800;font-size:clamp(44px,8.4vw,104px);line-height:.92;letter-spacing:-.035em;margin:0 0 6px}
+h1 em{font-style:normal;display:block;font-weight:400;font-size:.36em;letter-spacing:-.01em;color:var(--slate);margin-top:14px}
+.deck{font-size:20px;max-width:62ch;margin:26px 0 0;color:#26363F}
+.byline{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em;color:var(--slate);margin:14px 0 0}
+.byline b{color:var(--ink);font-weight:600;letter-spacing:0}
+.hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:28px}
+.chip{font-family:var(--mono);font-size:11px;letter-spacing:.06em;border:1px solid var(--hair);background:var(--paper-2);padding:6px 10px;border-radius:2px;color:var(--slate)}
+.chip b{color:var(--ink);font-weight:600}
+
+/* hero pulse strip */
+.pulse{margin-top:38px;border:1px solid var(--hair);background:var(--paper-2);border-radius:3px;overflow:hidden}
+.pulse svg{display:block;width:100%;height:auto}
+
+/* ---------- layout ---------- */
+.cols{display:grid;grid-template-columns:186px 1fr;gap:44px;margin-top:52px;align-items:start}
+nav.rail{position:sticky;top:74px;font-family:var(--mono);font-size:11.5px;line-height:1.5}
+nav.rail ol{list-style:none;margin:0;padding:0}
+nav.rail li{margin:0 0 3px}
+nav.rail a{display:flex;gap:9px;text-decoration:none;color:var(--slate);padding:5px 7px;border-left:2px solid transparent;border-radius:0 2px 2px 0}
+nav.rail a:hover{color:var(--ink);background:rgba(255,255,255,.6)}
+nav.rail a.on{color:var(--ink);border-left-color:var(--napqi);background:rgba(255,255,255,.85);font-weight:500}
+nav.rail a i{font-style:normal;color:var(--napqi);opacity:.65;min-width:18px}
+
+/* ---------- sections ---------- */
+section{padding:14px 0 56px;scroll-margin-top:78px}
+.sec-head{display:flex;align-items:baseline;gap:14px;border-top:2px solid var(--ink);padding-top:12px;margin-bottom:22px}
+.sec-num{font-family:var(--mono);font-size:12px;color:var(--napqi);letter-spacing:.1em;padding-top:5px}
+h2{font-family:var(--disp);font-weight:700;font-size:clamp(27px,4vw,40px);line-height:1.03;letter-spacing:-.025em;margin:0}
+h3{font-family:var(--disp);font-weight:600;font-size:20px;letter-spacing:-.01em;margin:34px 0 10px}
+h4{font-family:var(--mono);font-weight:600;font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin:22px 0 8px}
+p{margin:0 0 15px;max-width:72ch}
+a{color:var(--nac)}
+strong{font-weight:600}
+.lede{font-size:19px;color:#26363F}
+
+ul.tight{margin:0 0 16px;padding-left:20px;max-width:72ch}
+ul.tight li{margin-bottom:7px}
+.mono{font-family:var(--mono)}
+.val{font-family:var(--mono);font-weight:500;background:rgba(192,133,25,.13);padding:1px 5px;border-radius:2px;font-size:.9em;white-space:nowrap}
+.tag-nac{color:var(--nac);font-weight:600}
+.tag-tox{color:var(--napqi);font-weight:600}
+
+/* cards */
+.card{background:var(--paper-2);border:1px solid var(--hair);border-radius:3px;padding:20px 22px;box-shadow:var(--shadow);margin:22px 0}
+.card > :last-child{margin-bottom:0}
+.card-label{font-family:var(--mono);font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--slate);display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px;border-bottom:1px solid var(--hair);padding-bottom:9px}
+.card-label b{color:var(--napqi);font-weight:600}
+.tool{border-color:#B9C3BA}
+.tool .card-label b{color:var(--nac)}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px}
+
+.stat{background:var(--paper-2);border:1px solid var(--hair);border-left:3px solid var(--napqi);padding:14px 15px;border-radius:2px}
+.stat .n{font-family:var(--disp);font-weight:700;font-size:30px;letter-spacing:-.03em;line-height:1}
+.stat .k{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin-top:7px}
+.stat .s{font-size:14px;color:#3A4A54;margin-top:7px;line-height:1.45}
+.stat.teal{border-left-color:var(--nac)}
+.stat.amber{border-left-color:var(--amber)}
+
+/* controls */
+label.f{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--slate);margin-bottom:5px}
+input[type=number],select,input[type=text]{width:100%;font-family:var(--mono);font-size:15px;padding:9px 10px;border:1px solid #B9C3BA;background:#fff;color:var(--ink);border-radius:2px}
+input[type=range]{width:100%;accent-color:var(--napqi)}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid var(--nac);outline-offset:2px}
+.btn{font-family:var(--mono);font-size:12px;letter-spacing:.06em;padding:9px 14px;border:1px solid var(--ink);background:var(--ink);color:var(--paper-2);border-radius:2px;cursor:pointer}
+.btn:hover{background:#0C171D}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.ghost:hover{background:rgba(22,35,43,.06)}
+.seg{display:flex;flex-wrap:wrap;gap:6px}
+.seg button{font-family:var(--mono);font-size:11.5px;padding:7px 11px;border:1px solid var(--hair);background:var(--paper-2);color:var(--slate);border-radius:2px;cursor:pointer}
+.seg button.on{background:var(--ink);color:var(--paper-2);border-color:var(--ink)}
+.seg button:hover:not(.on){border-color:var(--slate);color:var(--ink)}
+
+/* verdict */
+.verdict{margin-top:16px;border:1px solid var(--hair);border-left:4px solid var(--slate);background:#fff;padding:15px 17px;border-radius:2px}
+.verdict.treat{border-left-color:var(--napqi);background:#FFF5F7}
+.verdict.safe{border-left-color:var(--nac);background:#F1F8F6}
+.verdict.warn{border-left-color:var(--amber);background:#FFFAF0}
+.verdict h5{font-family:var(--disp);font-size:19px;margin:0 0 6px;letter-spacing:-.015em}
+.verdict .sub{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);margin-bottom:9px}
+.novalue{text-transform:none;letter-spacing:normal;display:inline-block}
+.verdict ul{margin:10px 0 0;padding-left:19px;font-size:15.5px}
+.verdict li{margin-bottom:5px}
+
+/* tables */
+table{width:100%;border-collapse:collapse;font-size:14.5px;margin:14px 0}
+th,td{text-align:left;padding:9px 11px;border-bottom:1px solid var(--hair);vertical-align:top}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);font-weight:500;border-bottom:1px solid var(--ink)}
+td.n{font-family:var(--mono)}
+.scroll{overflow-x:auto}
+
+/* stage timeline */
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;margin:18px 0 0;border:1px solid var(--hair);border-radius:2px;overflow:hidden}
+.stages button{font-family:var(--mono);font-size:11px;padding:11px 6px;border:0;background:var(--paper-2);color:var(--slate);cursor:pointer;border-right:1px solid var(--hair);text-align:center;line-height:1.35}
+.stages button:last-child{border-right:0}
+.stages button.on{background:var(--ink);color:var(--paper-2)}
+.stages button b{display:block;font-size:13px;font-weight:600;letter-spacing:.04em}
+.stagebox{border:1px solid var(--hair);border-top:0;background:#fff;padding:18px 20px;border-radius:0 0 2px 2px}
+.stagebox h5{font-family:var(--disp);font-size:20px;margin:0 0 4px;letter-spacing:-.015em}
+.stagebox .when{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--napqi);margin-bottom:12px}
+
+/* metabolism */
+.bars{margin-top:6px}
+.bar-row{margin-bottom:11px}
+.bar-top{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--slate);margin-bottom:4px}
+.bar-top b{color:var(--ink);font-weight:500}
+.bar{height:15px;background:#E3E7E0;border-radius:2px;overflow:hidden}
+.bar i{display:block;height:100%;transition:width .35s cubic-bezier(.4,0,.2,1)}
+.b-conj i{background:linear-gradient(90deg,#7FA394,#4E7F6D)}
+.b-cyp i{background:linear-gradient(90deg,#E4B252,var(--amber))}
+.b-gsh i{background:linear-gradient(90deg,var(--nac),#12A093)}
+.b-free i{background:linear-gradient(90deg,#E45A7F,var(--napqi))}
+
+/* branch tool */
+.branch{display:grid;gap:8px}
+.branch button{text-align:left;font-family:var(--body);font-size:15.5px;padding:12px 14px;border:1px solid var(--hair);background:var(--paper-2);border-radius:2px;cursor:pointer;color:var(--ink);line-height:1.4}
+.branch button:hover{border-color:var(--nac);background:#fff}
+.branch button b{display:block;font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--napqi);margin-bottom:4px}
+
+/* checklist */
+.check{list-style:none;margin:12px 0 0;padding:0}
+.check li{display:flex;gap:11px;align-items:flex-start;padding:11px 12px;border:1px solid var(--hair);background:var(--paper-2);border-radius:2px;margin-bottom:7px;cursor:pointer;font-size:15.5px;line-height:1.45}
+.check li.done{background:#F1F8F6;border-color:#9BC6BB}
+.check .box{width:17px;height:17px;border:1.5px solid var(--slate);border-radius:2px;flex:0 0 auto;margin-top:3px;display:grid;place-items:center;font-family:var(--mono);font-size:12px;color:#fff}
+.check li.done .box{background:var(--nac);border-color:var(--nac)}
+.check li.done .box::after{content:"✓"}
+.check small{display:block;color:var(--slate);font-size:13px;margin-top:2px}
+
+/* tabs */
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:0}
+.tabs button{font-family:var(--mono);font-size:11.5px;padding:8px 12px;border:1px solid var(--hair);border-bottom:0;background:var(--paper-2);color:var(--slate);cursor:pointer;border-radius:2px 2px 0 0}
+.tabs button.on{background:#fff;color:var(--ink);font-weight:500;box-shadow:inset 0 2px 0 var(--napqi)}
+.tabbox{border:1px solid var(--hair);background:#fff;padding:20px 22px;border-radius:0 2px 2px 2px}
+.tabbox > :last-child{margin-bottom:0}
+
+/* quiz */
+.q{border:1px solid var(--hair);background:var(--paper-2);border-radius:3px;padding:18px 20px;margin-bottom:14px}
+.q .stem{font-size:16.5px;margin-bottom:12px}
+.q .stem b{font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--napqi);display:block;margin-bottom:6px;text-transform:uppercase}
+.opts{display:grid;gap:6px}
+.opts button{text-align:left;font-family:var(--body);font-size:15.5px;padding:10px 13px;border:1px solid var(--hair);background:#fff;border-radius:2px;cursor:pointer;color:var(--ink);line-height:1.4}
+.opts button:hover{border-color:var(--slate)}
+.opts button.right{border-color:var(--nac);background:#EAF5F1;font-weight:600}
+.opts button.wrong{border-color:var(--napqi);background:#FDEFF2;text-decoration:line-through;color:#8A5E6B}
+.expl{margin-top:12px;font-size:15px;border-left:3px solid var(--nac);padding:9px 0 9px 13px;color:#2A3A44;display:none}
+.expl.show{display:block}
+
+/* pull quote / warning */
+.warn{border:1px solid #E5B9C6;background:#FDF1F4;border-left:4px solid var(--napqi);padding:15px 18px;border-radius:2px;margin:20px 0;font-size:15.5px}
+.warn b{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--napqi);display:block;margin-bottom:6px}
+.note{border:1px solid #A9CEC5;background:#F1F8F6;border-left:4px solid var(--nac);padding:15px 18px;border-radius:2px;margin:20px 0;font-size:15.5px}
+.note b{font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--nac);display:block;margin-bottom:6px}
+
+details{border:1px solid var(--hair);background:var(--paper-2);border-radius:2px;padding:0;margin:12px 0}
+summary{cursor:pointer;font-family:var(--mono);font-size:12px;letter-spacing:.08em;padding:12px 15px;color:var(--ink);list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"+ ";color:var(--napqi)}
+details[open] summary::before{content:"– "}
+details .body{padding:0 15px 15px;font-size:15px}
+details .body > :last-child{margin-bottom:0}
+
+.refs{font-size:14px;line-height:1.5}
+.refs li{margin-bottom:9px}
+footer{border-top:2px solid var(--ink);margin-top:40px;padding-top:20px;font-family:var(--mono);font-size:11.5px;color:var(--slate);letter-spacing:.04em}
+
+.govbar{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1px;background:var(--hair);border:1px solid var(--hair);border-radius:3px;margin-top:30px;overflow:hidden}
+.govbar > div{background:var(--paper-2);padding:11px 14px}
+.govbar .k{display:block;font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--slate);margin-bottom:3px}
+.govbar .v{font-family:var(--mono);font-size:12.5px;color:var(--ink);line-height:1.4}
+.cit{font-family:var(--mono);font-size:9.5px;vertical-align:super;line-height:0;color:var(--nac);text-decoration:none;padding:0 1px;font-weight:600}
+.cit:hover{background:rgba(15,118,110,.14);border-radius:2px}
+.srcnote{font-size:13.5px;color:var(--slate);border-left:2px solid var(--hair);padding-left:11px;margin:10px 0 0;max-width:72ch}
+@media (max-width:900px){
+  .cols{grid-template-columns:1fr;gap:0}
+  nav.rail{display:none}
+  body{font-size:16.5px}
+  .hero{padding:40px 0 30px}
+  .card{padding:16px 15px}
+  .stages{grid-template-columns:repeat(2,1fr)}
+  .stages button{border-bottom:1px solid var(--hair)}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-in">
+    <div class="brand"><b>Clinical Toxicology in Saudi Arabia</b> &nbsp;/&nbsp; Ch. 02</div>
+    <select class="jump" id="jump" aria-label="Jump to section"></select>
+  </div>
+  <div class="progress"><i id="prog"></i></div>
+</div>
+
+<div class="wrap">
+
+<!-- ======================= HERO ======================= -->
+<header class="hero">
+  <p class="eyebrow">Chapter Two <span>— Analgesics &amp; Antipyretics</span></p>
+  <h1>Paracetamol<em>Acetaminophen · APAP · باراسيتامول</em></h1>
+  <p class="byline"><b>Musa Suliman Alfaifi</b>, Clinical Toxicologist</p>
+  <p class="deck">The safest drug in the pharmacy and the commonest cause of acute liver failure in the developed world are the same molecule. Everything that separates those two outcomes is measured in hours.</p>
+
+  <div class="hero-meta">
+    <span class="chip">Treatment line <b>150 mcg/mL @ 4 h</b></span>
+    <span class="chip">NAC highly effective <b>&lt; 8 h</b> <span style="opacity:.7">(conventional OD)</span></span>
+    <span class="chip">Early NAC <b>markedly reduces</b> hepatotoxicity risk</span>
+    <span class="chip">KSA access <b>MOH 937 · verify locally</b></span>
+  </div>
+
+  <div class="govbar">
+    <div><span class="k">Guideline jurisdiction</span><span class="v">US/Canada consensus 2023 · ACMT 2026 · EXTRIP</span></div>
+    <div><span class="k">Status</span><span class="v">Educational draft</span></div>
+  </div>
+
+  <div class="warn" style="margin-top:16px">
+    <b>Read this before using the calculators</b>
+    Every tool on this page is a teaching aid built from published literature. It does not replace consultation with the Saudi Toxicology Consultation Service or a medical toxicologist, and it does not override your institution's protocol. Thresholds differ between guidelines and jurisdictions; where sources disagree, both are shown and the more conservative option is identified.
+  </div>
+
+  <div class="pulse">
+    <svg id="heroChart" viewBox="0 0 900 150" role="img" aria-label="The Rumack-Matthew treatment line falling from 150 to 4.7 micrograms per millilitre over 24 hours">
+      <defs>
+        <linearGradient id="riskFill" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#C81D4E" stop-opacity=".16"/>
+          <stop offset="100%" stop-color="#C81D4E" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <g id="heroG"></g>
+    </svg>
+  </div>
+</header>
+
+<div class="cols">
+
+<!-- ======================= RAIL ======================= -->
+<nav class="rail" aria-label="Chapter contents">
+  <ol id="railList"></ol>
+</nav>
+
+<main>
+
+<!-- ======================= 01 ======================= -->
+<section id="s1">
+  <div class="sec-head"><span class="sec-num">01</span><h2>Where paracetamol sits in Saudi practice</h2></div>
+
+  <p class="lede">Paracetamol is not a niche toxicology problem in the Kingdom. It is the analgesic in almost every household medicine cabinet, it is sold without prescription, and it appears repeatedly in Saudi hospital series of deliberate self-poisoning — particularly among young women.</p>
+  <p class="srcnote">The national picture rests on single-centre chart reviews and poison-centre call registries, not a national overdose registry. Each figure below is labelled with the study that produced it. None should be read as a national incidence rate.</p>
+
+  <div class="grid3">
+    <div class="stat"><div class="n">~70%</div><div class="k">Young females</div><div class="s">Of <strong>86 adults</strong> with paracetamol overdose at one Eastern Province university hospital, 1997–2012; 80% were suicide attempts. Single-centre chart review (Almansori et al., 2015).<a class="cit" href="#s14" title="See reference 12">12</a></div></div>
+    <div class="stat amber"><div class="n">9.3%</div><div class="k">Analgesics</div><div class="s">The commonest medication class among 39,439 poison-centre calls across KSA (Sep 2020 – Sep 2021). Note the population was predominantly <strong>children ≤ 5 years with unintentional exposure</strong> — not adult deliberate overdose.<a class="cit" href="#s14" title="See reference 13">13</a></div></div>
+    <div class="stat teal"><div class="n">2 / 86</div><div class="k">Hepatotoxicity</div><div class="s">Two hepatotoxicities and no deaths in the same Eastern Province series — consistent with early presentation and early NAC, but far too small to generalise.<a class="cit" href="#s14" title="See reference 12">12</a></div></div>
+    <div class="stat"><div class="n">15.5%</div><div class="k">Qassim ED admissions</div><div class="s">Paracetamol overdose as a proportion of acute toxicity admissions in a retrospective record review of Qassim province hospitals.<a class="cit" href="#s14" title="See reference 17">17</a></div></div>
+    <div class="stat amber"><div class="n">449 → 244</div><div class="k">2019 vs 2020</div><div class="s">Descriptive registry counts of reported paracetamol overdose before and during the pandemic year; 62.6% female, 86.7% Saudi nationals. No denominator, so this is a change in reports, not necessarily in incidence.<a class="cit" href="#s14" title="See reference 16">16</a></div></div>
+    <div class="stat teal"><div class="n">15 / 29</div><div class="k">NAC not indicated</div><div class="s">In a <strong>single-centre pilot audit of 29 patients</strong> at KSUMC, NAC was judged inappropriately indicated in 15. A local signal worth auditing in your own department — <strong>not</strong> a national over-treatment rate.<a class="cit" href="#s14" title="See reference 18">18</a></div></div>
+  </div>
+
+  <h3>Three things that make the Saudi picture distinctive</h3>
+  <ul class="tight">
+    <li><strong>Access is easy.</strong> Paracetamol and paracetamol-combination products are available OTC in community pharmacies and by home delivery.</li>
+    <li><strong>Presentation is usually early.</strong> Saudi poison-centre data show a large majority of callers contacting services within the first hour of exposure. Early contact is why nomogram-guided care works well — and why late presenters are the outliers who die.</li>
+    <li><strong>Hidden paracetamol is everywhere.</strong> Combination cold, flu and analgesic preparations mean patients frequently do not know they have taken it. This is one rationale for routine paracetamol screening in deliberate self-poisoning — practice varies, and as discussed in the laboratory-strategy section later in this chapter, some evidence supports selective screening when a thorough and reliable history excludes paracetamol exposure.</li>
+  </ul>
+
+  <div class="note">
+    <b>Local pathway</b>
+    Public health enquiries in Saudi Arabia begin with the Ministry of Health <strong>937</strong> line. A national <strong>Toxicology Consultation Service</strong> associated with a 1937 pathway is described in the published literature, and suspected poisoning cases may be routed to it. <strong>This chapter has not verified the current pathway against primary MOH documentation</strong> — do not publish it as established national policy without that check, and in the meantime follow your own institution's established route to toxicology. Whatever the route, escalate early — before the 8-hour window closes, not after.
+  </div>
+</section>
+
+<!-- ======================= 02 ======================= -->
+<section id="s2">
+  <div class="sec-head"><span class="sec-num">02</span><h2>How the drug works, and how it kills</h2></div>
+
+  <p>Paracetamol was synthesised in 1878 and marketed as Tylenol and Panadol in the 1950s. Toxicity was first recognised in Scotland in 1966, a decade after marketing, once sufficient exposure had accumulated to reveal the drug's narrow margin at supratherapeutic dose.</p>
+
+  <h3>An analgesic that behaves unlike an NSAID</h3>
+  <p>Most NSAIDs occupy the cyclooxygenase site of prostaglandin H₂ synthase directly. Paracetamol instead reduces the heme on the <strong>peroxidase</strong> portion of the enzyme, indirectly preventing COX activation. This makes its effect dependent on local <em>peroxide tone</em>: strong where peroxide is low (the brain), weak where it is high (macrophages, platelets at sites of inflammation).</p>
+  <p>That single mechanistic fact explains the entire clinical profile — <strong>excellent central antipyresis and analgesia, negligible peripheral anti-inflammatory and antiplatelet effect.</strong> Additional analgesia comes from descending serotonergic pathways, and from opioid, cannabinoid and TRPV1 systems.</p>
+
+  <div class="card">
+    <div class="card-label"><span>Pharmacokinetics at therapeutic dose</span><b>Reference values</b></div>
+    <div class="scroll">
+    <table>
+      <tr><th>Parameter</th><th>Value</th><th>Why it matters in overdose</th></tr>
+      <tr><td>Time to peak (IR tablet)</td><td class="n">~45 min</td><td>Absorption is essentially complete by 4 h — hence the 4-hour nomogram sample.</td></tr>
+      <tr><td>Time to peak (liquid)</td><td class="n">~30 min</td><td>Paediatric elixirs peak fastest.</td></tr>
+      <tr><td>Time to peak (IV)</td><td class="n">&lt; 15 min</td><td>Nomogram is invalid for IV exposure.</td></tr>
+      <tr><td>Volume of distribution</td><td class="n">~0.9–1 L/kg</td><td>Small V<sub>d</sub> + low protein binding = dialysable.</td></tr>
+      <tr><td>Protein binding</td><td class="n">10–20%</td><td>Same.</td></tr>
+      <tr><td>Half-life (therapeutic)</td><td class="n">2–4 h</td><td>Prolongation &gt; 4 h signals hepatic injury.</td></tr>
+      <tr><td>Hepatic clearance</td><td class="n">&gt; 90%</td><td>Renal excretion unchanged is only 4–7%.</td></tr>
+      <tr><td>Analgesic serum level</td><td class="n">~10 mcg/mL</td><td>Two orders of magnitude below the treatment line.</td></tr>
+    </table>
+    </div>
+  </div>
+
+  <h3 id="metab">The metabolic bottleneck — move the dose and watch it fail</h3>
+  <p>At therapeutic doses more than 90% of paracetamol is conjugated by glucuronidation and sulfation to harmless metabolites, and roughly 4% goes down the CYP2E1 pathway to <span class="tag-tox">NAPQI</span>, which glutathione immediately mops up. Conjugation is <em>saturable</em>. Glutathione is <em>finite</em>. Overdose exploits both.</p>
+
+  <div class="card tool">
+    <div class="card-label"><span>Metabolic load — schematic</span><b>Not predictive · no numeric output</b></div>
+    <label class="f" for="doseSlider">Ingested dose — <span id="doseOut" class="mono">15 mg/kg</span></label>
+    <input type="range" id="doseSlider" min="10" max="600" step="5" value="15">
+    <div class="bars">
+      <div class="bar-row b-conj"><div class="bar-top"><span>Glucuronidation + sulfation</span><b id="v-conj">handles nearly all of the dose</b></div><div class="bar"><i id="i-conj" style="width:90%"></i></div></div>
+      <div class="bar-row b-cyp"><div class="bar-top"><span>CYP2E1 → NAPQI formation</span><b id="v-cyp">small and steady</b></div><div class="bar"><i id="i-cyp" style="width:12%"></i></div></div>
+      <div class="bar-row b-gsh"><div class="bar-top"><span>Hepatic glutathione</span><b id="v-gsh">ample reserve</b></div><div class="bar"><i id="i-gsh" style="width:95%"></i></div></div>
+      <div class="bar-row b-free"><div class="bar-top"><span>Unquenched NAPQI binding hepatocyte protein</span><b id="v-free">none expected</b></div><div class="bar"><i id="i-free" style="width:2%"></i></div></div>
+    </div>
+    <div class="verdict" id="metabVerdict"><div class="sub">Interpretation</div><h5>Therapeutic range</h5><p style="margin:0">Conjugation absorbs the load. The small NAPQI stream is detoxified as fast as it forms. Protein adducts are formed even at therapeutic doses — their presence alone is not toxicity.</p></div>
+    <p style="font-size:13.5px;color:var(--slate);margin:14px 0 0">This is a <strong>schematic illustration of direction, not magnitude</strong>. Bar lengths are qualitative and deliberately carry no numbers — there is no validated bedside model of conjugation capacity or glutathione reserve. The dose bands are taken from the literature; the bars are not. Never use this for a patient decision.</p>
+  </div>
+
+  <h3>From NAPQI to cell death</h3>
+  <p>In animal experiments, hepatotoxicity becomes evident once hepatic glutathione falls to roughly <span class="val">30% of baseline</span>, and experimental and clinical observation supports substantial depletion during the first several hours after a significant overdose. That provides the biological rationale for the marked benefit of starting NAC within 8 hours — <strong>but it is not a fixed individual threshold reached at a predictable hour.</strong> Depletion varies with absorbed dose, formulation, metabolism and host factors. The clinical evidence for early treatment is considerably stronger than any claim that every poisoned patient crosses a particular glutathione line at a particular time.</p>
+  <p>Unquenched NAPQI arylates cysteine residues on intramitochondrial proteins. What follows is a cascade rather than a single hit: MAP kinase activation and JNK translocation, opening of mitochondrial permeability transition pores, collapse of ATP synthesis, release of endonuclease G and apoptosis-inducing factor, DNA fragmentation, and finally <strong>necrosis</strong>. Damage-associated molecular patterns (HMGB-1, DNA fragments, heat-shock proteins) then trigger Kupffer cells and an inflammatory second wave.</p>
+  <p>Crucially, <strong>NAC still helps after covalent binding has occurred</strong> — the downstream cascade remains modifiable. Late presentation is therefore not a reason to withhold NAC; benefit has been demonstrated even in established acetaminophen-induced acute liver failure.</p>
+
+  <div class="grid2">
+    <div class="card" style="margin:0">
+      <div class="card-label"><span>Why zone 3</span></div>
+      <p style="margin:0;font-size:15.5px">Centrilobular (zone III) hepatocytes carry the highest concentration of CYP2E1, so they make the most NAPQI and die first. In severe poisoning necrosis extends into zones II and I. Regeneration comes from the periportal zone 1 cells — which is why patients who recover from acute paracetamol-induced liver injury <strong>generally regain normal hepatic function, without chronic liver disease attributable to the overdose.</strong></p>
+    </div>
+    <div class="card" style="margin:0">
+      <div class="card-label"><span>Why the kidney</span></div>
+      <p style="margin:0;font-size:15.5px">Renal tubules also express CYP2E1 and generate NAPQI locally, producing acute tubular necrosis. AKI is rare overall (&lt;1%) but occurs in up to 25% of those with significant hepatotoxicity and 50–80% of those in hepatic failure. Creatinine typically peaks on days 5–7 and normalises within a month.</p>
+    </div>
+  </div>
+
+  <details>
+    <summary>Rarity worth knowing: 5-oxoproline (pyroglutamic) acidosis</summary>
+    <div class="body">
+      <p>A high anion-gap metabolic acidosis in a patient on chronic therapeutic paracetamol — classically a woman with chronic kidney disease and malnutrition — should raise 5-oxoprolinaemia. Glutathione depletion removes negative feedback on γ-glutamylcysteine synthetase; γ-glutamylcysteine accumulates and is shunted to 5-oxoproline. It may reflect genetic polymorphisms of glutathione synthetase or 5-oxoprolinase, and genetic testing is reasonable.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ======================= 03 ======================= -->
+<section id="s3">
+  <div class="sec-head"><span class="sec-num">03</span><h2>The four stages — and the trap inside Stage I</h2></div>
+
+  <p>Acute paracetamol toxicity is conventionally divided into four stages. The clinically dangerous feature is that <strong>the first reliable clinical sign of poisoning is hepatic injury, which appears many hours after the antidote window has begun to close.</strong> A well-looking, chatting patient at hour 6 tells you nothing reassuring.</p>
+
+  <div class="stages" role="tablist" id="stageTabs">
+    <button role="tab" data-s="1" class="on"><b>Stage I</b>0 – 24 h</button>
+    <button role="tab" data-s="2"><b>Stage II</b>24 – 72 h</button>
+    <button role="tab" data-s="3"><b>Stage III</b>72 – 96 h</button>
+    <button role="tab" data-s="4"><b>Stage IV</b>4 d – 2 wk</button>
+  </div>
+  <div class="stagebox" id="stageBox"></div>
+
+  <div class="warn">
+    <b>Do not attribute early coma or acidosis to "just paracetamol"</b>
+    Depressed consciousness, lactic acidosis and even death within hours are described after <em>massive</em> ingestion, caused by inhibition of mitochondrial electron transport rather than liver failure. But this presentation must never be ascribed to paracetamol alone without a thorough search for co-ingestants and other causes.
+  </div>
+</section>
+
+<!-- ======================= 04 ======================= -->
+<section id="s4">
+  <div class="sec-head"><span class="sec-num">04</span><h2>Which risk framework applies to your patient?</h2></div>
+
+  <p class="lede">Before you reach for the nomogram, decide whether the nomogram is even valid. The single commonest error in paracetamol care is plotting a concentration on a graph that was never designed for that scenario.</p>
+
+  <div class="card tool">
+    <div class="card-label"><span>Scenario router</span><b>Start here</b></div>
+    <div class="branch" id="branchBtns"></div>
+    <div id="branchOut"></div>
+  </div>
+
+  <h3>Dose thresholds that trigger assessment</h3>
+  <div class="warn">
+    <b>Reported dose does not decide treatment</b>
+    Where a valid timed concentration can be obtained for an acute ingestion, <strong>that concentration decides — not the history</strong>. Dose estimation is unreliable, body size varies, and no bedside dose boundary separates the safe from the injured. The figures below are triggers for evaluation, and in one case for empirical treatment when the clock will beat the laboratory. They are not substitutes for the nomogram or, for repeated ingestion, for the AST/ALT-and-concentration decision described in the RSTI section later in this chapter.
+  </div>
+  <div class="note">
+    <b>Acute vs repeated — the boundary is 24 hours</b>
+    The 2023 US/Canada consensus defines <strong>acute ingestion</strong> as any ingestion period under 24 hours regardless of pattern, and <strong>repeated supratherapeutic ingestion</strong> as exposure continuing beyond 24 hours. The two dose-threshold tables below follow that split: the first row is the acute-ingestion trigger for <em>empirical NAC while awaiting a concentration</em>; the RSTI rows that follow are <em>assessment</em> triggers (obtain a concentration and labs), not treatment triggers — treatment in RSTI follows the AST/ALT-or-concentration rule given in the RSTI section, not the dose figure directly.
+  </div>
+  <div class="scroll">
+  <table>
+    <tr><th>Pattern</th><th>Threshold for evaluation</th><th>Note</th></tr>
+    <tr><td><strong>Acute, adult — consensus rule</strong></td><td class="n">&gt; 200 mg/kg<br>or &gt; 10 g</td><td><strong>Start NAC empirically at this reported dose only when waiting for the timed concentration would delay treatment beyond 8 h.</strong> Otherwise do not decide from reported dose at all — use the timed concentration.</td></tr>
+    <tr><td>Acute, adult — historical screening figure</td><td class="n">≥ 7.5 g <span style="color:var(--slate)">(or 150 mg/kg)</span></td><td>This number comes from the <em>enrolment definition</em> of the original nomogram studies. It is a conservative screening/referral trigger for obtaining a concentration — not a consensus treatment threshold. Label it as such if your department adopts it locally.</td></tr>
+    <tr><td>Acute, child &lt; 6 y — general paediatric screening figure</td><td class="n">≥ 200 mg/kg</td><td><strong>Action: screening/referral trigger</strong> — obtain a timed concentration and involve poison control, exactly as for an adult. <strong>This figure is not established in the 2023 consensus as a distinct paediatric-specific recommendation</strong> — the consensus's published >200 mg/kg/>10 g figure is stated for empirical NAC generally, without a separate under-6 rule beyond IV-dosing and fluid-volume adjustments. This row reflects a widely used general paediatric screening convention rather than a citable consensus threshold; treat it as a local/departmental screening trigger, not a guideline-mandated one, and confirm against your own poison centre's paediatric protocol. Treatment itself is still decided by plotting the 4–24 h concentration on the nomogram, not by this dose figure.</td></tr>
+    <tr><td>Repeated supratherapeutic, 24–48 h</td><td class="n">≥ 150 mg/kg/day or ≥ 6 g/day</td><td><strong>Action: obtain APAP concentration, AST/ALT and creatinine.</strong> Whichever figure is lower. Applies to adult and paediatric patients — this is the assessment tier for exposure that has continued between 24 and 48 hours. Treat if APAP ≥ 20 mcg/mL or AST/ALT abnormal (unless known baseline).</td></tr>
+    <tr><td>Repeated supratherapeutic, &gt; 48 h</td><td class="n">≥ 100 mg/kg/day or ≥ 4 g/day</td><td><strong>Action: obtain APAP concentration, AST/ALT and creatinine.</strong> Whichever figure is lower. The threshold for assessment falls as the exposure duration lengthens. Same treatment rule applies.</td></tr>
+    <tr><td>Any repeated-ingestion patient, any dose</td><td class="n">Symptoms present</td><td><strong>Action: evaluate regardless of dose</strong> if there are findings compatible with toxicity — repeated vomiting, right-upper-quadrant tenderness, or altered mental status.</td></tr>
+    <tr><td>IV paracetamol error, child</td><td class="n">90 mg/kg single<br>or &gt; 150 mg/kg / 24 h</td><td><strong>Action: contact a poison centre or clinical toxicologist.</strong> Not an automatic NAC threshold on its own. Adults: individualised, discuss the case.</td></tr>
+  </table>
+  </div>
+
+  <div class="note">
+    <b>History is a screening test, not a gold standard</b>
+    Reported doses of 6 g, 13 g, 30 g and 50 g correspond to roughly 5%, 10%, 50% and 90% probability of a concentration above the treatment line. But 1.4–8.4% of self-harm patients who <em>deny</em> paracetamol have a measurable level, and 0.2–2.2% are above the line. Measure the concentration.
+  </div>
+</section>
+
+<!-- ======================= 05 — SIGNATURE ======================= -->
+<section id="s5">
+  <div class="sec-head"><span class="sec-num">05</span><h2>The nomogram, live</h2></div>
+
+  <p>Rumack and Matthew separated untreated patients who went on to develop AST &gt; 1000 IU/L from those who did not, using a single concentration plotted against time. The original discriminatory line ran from 200 mcg/mL at 4 h; the FDA lowered it a further 25% to produce the <strong>150 line</strong> used in North America, Australia and most of the world. The UK and Ireland use the more conservative <strong>100 line</strong>.</p>
+  <p>The slope reflects a 4-hour half-life by convention only — it is empirical, not kinetic. And the line was drawn against transaminase elevation, not death: it is one of the most sensitive screening tools in medicine. Reported "nomogram failure" rates of roughly 1–3% refer to patients who develop hepatotoxicity despite a concentration below the treatment line — largely attributable to inaccurate ingestion histories or unusual individual susceptibility — not to failure of NAC once given above the line.</p>
+
+  <div class="card tool">
+    <div class="card-label"><span>Plot a patient</span><b>Single point, 4–24 h post-ingestion<a class="cit" href="#s14" title="See reference 6">6</a></b></div>
+
+    <div class="grid3" style="margin-bottom:14px">
+      <div>
+        <label class="f" for="nTime">Hours since ingestion</label>
+        <input type="number" id="nTime" value="4" min="0" max="30" step="0.5">
+      </div>
+      <div>
+        <label class="f" for="nConc">Concentration</label>
+        <input type="number" id="nConc" value="180" min="0" step="1">
+      </div>
+      <div>
+        <label class="f" for="nUnit">Units</label>
+        <select id="nUnit"><option value="mcg">mcg/mL (mg/L)</option><option value="umol">µmol/L</option></select>
+      </div>
+    </div>
+
+    <div class="seg" style="margin-bottom:14px">
+      <button data-line="150" class="on">150 line (US / Canada / Australia)</button>
+      <button data-line="100">100 line (UK / Ireland)</button>
+    </div>
+
+    <svg id="nomo" viewBox="0 0 760 470" role="img" aria-label="Interactive semi-logarithmic Rumack-Matthew nomogram"></svg>
+
+    <div id="nomoVerdict" class="verdict"></div>
+  </div>
+
+  <div class="warn">
+    <b>One sub-line concentration is not always enough — repeat it in these two situations</b>
+    <ul class="tight" style="margin:8px 0 0">
+      <li><strong>Extended-release paracetamol.</strong> If a concentration drawn 4–12 h after ingestion is <em>below</em> the treatment line but <strong>above 10 mcg/mL</strong>, obtain another concentration <strong>4–6 hours later</strong> before excluding toxicity.</li>
+      <li><strong>Co-ingested opioids or antimuscarinics.</strong> These delay gastric emptying and absorption. Where the initial concentration is above 10 mcg/mL but below the line <em>and</em> clinical effects of the co-ingestant are present, repeat the concentration on the same basis.</li>
+    </ul>
+    <p style="margin:10px 0 0">Both rules exist to prevent false reassurance from a single early sub-line value. Delayed absorption and "nomogram crossing" — an initial below-line value followed by an above-line one — have been described even with immediate-release products, particularly with co-ingestants that slow gastrointestinal motility. This is not a reason to repeat every immediate-release level routinely; <strong>repeat testing should follow the specific criteria above</strong> (extended-release, or a sub-line value with a co-ingestant producing clinical effects), not be applied blanket-wide.</p>
+  </div>
+
+  <div class="warn">
+    <b>Five ways to misuse this graph</b>
+    <ul class="tight" style="margin:8px 0 0">
+      <li>Plotting a level drawn <strong>before 4 hours</strong>. No pre-4-hour concentration may be plotted on the nomogram, ever. A nondetectable level between 2 and 4 h <em>typically</em> excludes a significant ingestion — but the consensus pairs that with poison-centre or toxicologist consultation where there is any uncertainty, and anything detectable must be repeated at 4 h. Before 2 h, uninterpretable.</li>
+      <li>Plotting <strong>two points and drawing your own half-life</strong>. Not validated.</li>
+      <li>Using it after <strong>IV paracetamol</strong>, or when the ingestion window exceeds 24 h.</li>
+      <li>Using the <strong>latest</strong> possible time of ingestion. Always take the earliest plausible time — the worst-case scenario.</li>
+      <li>Assuming that below the line means safe in a patient with an <strong>elevated AST</strong>. It does not.</li>
+    </ul>
+  </div>
+
+  <h3>Above the line is not one risk — it is a gradient</h3>
+  <p>Risk is not the same for everyone above the treatment line — it increases progressively with height above it. Historically cited approximations are that roughly 60% of <em>untreated</em> patients above the original 200 line develop hepatotoxicity; that among patients who <em>do</em> receive NAC, risk rises from under 5% toward roughly 10% near the 300 line and toward 20–40% near the 500 line; and that coagulopathy risk climbs again near the 900 line. <strong>These outcome percentages come from the older dose-escalation and cohort literature rather than a single verified primary source for this chapter</strong> — the qualitative point (risk climbs progressively, and climbs faster above 300 and again above 500/900) is well supported; treat the specific percentages as illustrative orders of magnitude rather than numbers to quote precisely, until traced to their primary cohorts. The 300 line itself is well sourced: the 2023 consensus defines it as 50% above the original 200 line.</p>
+
+  <div class="note">
+    <b>Know which line is which</b>
+    <ul class="tight" style="margin:8px 0 0">
+      <li><strong>150 line — the treatment line.</strong> Derived as 25% below the original for safety. Above it, give NAC.</li>
+      <li><strong>200 line — the original Rumack–Matthew line</strong>, derived from patient data.</li>
+      <li><strong>300 line — the "high-risk line" of the 2023 US/Canada consensus</strong>, derived as 50% above the original. The consensus defines a <strong>high-risk ingestion</strong> as ≥ 30 g ingested <em>or</em> a concentration on or above this line, and states that many clinicians would give an increased dose of acetylcysteine — while explicitly saying the literature is insufficient to recommend a specific dose.</li>
+      <li><strong>500 line — not a consensus term.</strong> It comes from the older US multicentre study protocol and from published dose-escalation proposals. Useful when reading that literature; do not present it as the current definition of a high-risk ingestion.</li>
+    </ul>
+  </div>
+
+  <div class="note">
+    <b>Which line applies in Saudi Arabia?</b>
+    Saudi practice follows the <strong>150 line</strong>, aligned with the US, Canadian and Australian standard — the line most widely used internationally.
+  </div>
+
+  <div class="note">
+    <b>Unit conversion</b>
+    Saudi laboratories may report either mass or molar units. <span class="val">1 mcg/mL = 6.62 µmol/L</span>. The treatment line at 4 h is 150 mcg/mL ≈ 992 µmol/L; the UK line is 100 mcg/mL ≈ 662 µmol/L. The UK standardised to mass units precisely because this confusion caused failures to treat.
+  </div>
+</section>
+
+<!-- ======================= 06 ======================= -->
+<section id="s6">
+  <div class="sec-head"><span class="sec-num">06</span><h2>Laboratory strategy</h2></div>
+
+  <p>Resist the reflex panel — but do not mistake that for ordering nothing. <strong>For risk-stratifying an uncomplicated, isolated acute ingestion, the key initial toxicology test is the timed paracetamol concentration.</strong> Add <strong>AST</strong> when the patient is at risk by nomogram or history, or when repeated supratherapeutic dosing or existing injury is suspected.</p>
+  <p>That is a statement about toxicological risk stratification, not about the whole workup. Clinical evaluation still governs the rest: <strong>a pregnancy test in females of childbearing potential</strong>, a salicylate concentration and ECG where co-ingestion is possible, glucose in anyone with altered mental status, and whatever else the presentation demands. Deliberate self-poisoning is rarely a single-drug problem.</p>
+
+  <div class="grid2">
+    <div class="card" style="margin:0">
+      <div class="card-label"><span>AST may change earlier than ALT</span></div>
+      <p style="margin:0;font-size:15.5px">AST rises first and falls first (half-life ~15 h vs ~40 h for ALT), so it detects early injury and demonstrates recovery slightly sooner. <strong>Either AST or ALT is acceptable</strong> — the 2023 consensus and the ACMT stopping criteria both accept either — so use whichever your institution monitors, and <strong>follow the same marker serially</strong> where practical. Elevation begins within 24 h in most, is near-universal by 36 h, and can appear as early as 12 h in the most severely poisoned.</p>
+    </div>
+    <div class="card" style="margin:0">
+      <div class="card-label"><span>The INR trap</span></div>
+      <p style="margin:0;font-size:15.5px">Paracetamol itself mildly prolongs PT within 4–24 h by inhibiting vitamin K–dependent γ-carboxylation — and <strong>NAC also raises the INR</strong>, typically to below 1.5–2.0, stabilising after ~16 h of infusion. A modest INR rise during NAC, particularly with normal aminotransferases and no other evidence of hepatic dysfunction, <strong>does not by itself establish hepatic failure</strong> — but do not invert that into a diagnosis: several mechanisms can raise an early INR, so interpret it alongside the aminotransferases and the clinical picture rather than attributing it confidently to the antidote.</p>
+    </div>
+  </div>
+
+  <h4>Escalation triggers</h4>
+  <ul class="tight">
+    <li>AST/ALT elevated → add <span class="val">PT/INR</span>, <span class="val">creatinine</span>. Repeat according to severity and trajectory: stable, mild injury may be reassessed at 24-hour intervals, but <strong>evolving or established acute liver failure requires monitoring every few hours</strong> in an ICU or liver-centre setting — see below.</li>
+    <li>Evidence of hepatic failure → add <span class="val">glucose</span>, <span class="val">pH</span>, <span class="val">lactate</span>, <span class="val">phosphate</span>, with bedside neurological assessment. Hypoglycaemia is the most readily treatable lethal complication — monitor it obsessively.</li>
+    <li>AST or ALT above <span class="val">1000 IU/L</span> is the <em>conventional research definition</em> of hepatotoxicity used in most acetaminophen studies — it is a study cutoff, not a line separating clinically important from unimportant injury. A lower peak, particularly alongside a rising INR, AKI, hypoglycaemia or acidosis, can still matter clinically. Interpret the aminotransferase trajectory together with INR and the other prognostic markers, not in isolation.</li>
+  </ul>
+
+  <details>
+    <summary>Biomarkers on the horizon — miRNA-122, HMGB-1, keratin-18, protein adducts</summary>
+    <div class="body">
+      <p><strong>miRNA-122</strong> is liver-specific, is actively released before cell lysis, rises before ALT, and correlates with peak ALT and INR — the most promising early discriminator of who will develop injury.</p>
+      <p><strong>Acetylated HMGB-1</strong> is secreted by macrophages and, in early human work, rose only in patients who later met transplant criteria, were transplanted, or died — a potential prognostic marker rather than a diagnostic one.</p>
+      <p><strong>Keratin-18</strong> (nK18 for necrosis, aK18 for apoptosis) rises before ALT elevation. <strong>Protein adducts</strong> (3-cysteinyl-S-yl-APAP) confirm NAPQI binding, peak with AST, have an elimination half-life of ~27 h and remain detectable for up to two weeks — useful in undifferentiated acute liver failure, but adducts are present at therapeutic dosing too, so they prove exposure rather than toxicity.</p>
+      <p>None is routinely available. None should currently change management.</p>
+    </div>
+  </details>
+
+  <div class="note">
+    <b>Acute liver failure of unknown cause</b>
+    Paracetamol is the leading cause of ALF in the developed world, and up to 20% of adult and 50% of paediatric ALF is labelled indeterminate. In any ICU admission with ALF of uncertain aetiology, retrieve and test the <strong>earliest stored blood specimen</strong> for paracetamol. Note also that severe hyperbilirubinaemia can cross-react with some enzymatic assays and produce a falsely elevated result.
+  </div>
+</section>
+
+<!-- ======================= 07 ======================= -->
+<section id="s7">
+  <div class="sec-head"><span class="sec-num">07</span><h2>Antidote: getting NAC right</h2></div>
+
+  <p>NAC works in three distinct ways, and which one matters depends entirely on when you give it. Early, it is a <strong>glutathione precursor and substitute</strong> that detoxifies NAPQI and provides cysteine as a substrate for sulfation. Late, once hepatic failure is established, it works through non-specific mechanisms — free-radical scavenging, improved oxygen delivery and microvascular tone, increased mitochondrial ATP production — and it reduces vasopressor requirement, cerebral oedema and death <em>without changing the degree of hepatic injury</em>.</p>
+
+  <div class="warn">
+    <b>The efficacy curve</b>
+    For a <strong>conventional, standard-risk acute ingestion</strong>, NAC is <strong>maximally effective when started within 8 hours</strong> — this is what the prescribing information and ACMT both describe — and <strong>efficacy decreases with delayed treatment</strong> thereafter. That figure does not extend to massive or high-risk overdoses, where hepatotoxicity occurs despite early standard-dose treatment. Time-to-NAC is best thought of as a continuous variable rather than a hard cutoff — earlier is better at every point — and where a concentration cannot be obtained before 8 hours, <strong>start NAC and ask questions afterwards.</strong> Presentation after 8 hours is not a reason to withhold NAC; it remains beneficial, including in established hepatic failure.
+  </div>
+
+  <h3>Route: IV or oral?</h3>
+  <p><strong>Both routes are effective when given correctly and promptly</strong>, and the 2023 consensus treats them as comparable. Be careful with the stronger claim: no controlled trial has directly compared them, and the only setting studied exclusively by the IV route is fulminant hepatic failure. The choice turns on vomiting, airway, availability and practicality — not on presumed potency.</p>
+
+  <div class="scroll">
+  <table>
+    <tr><th></th><th>Intravenous</th><th>Oral</th></tr>
+    <tr><td>Total dose</td><td class="n">300 mg/kg / 21 h</td><td class="n">1330 mg/kg / 72 h</td></tr>
+    <tr><td>Principal adverse effect</td><td>Anaphylactoid reactions <span class="n">14–18%</span> prospectively (2–6% retrospectively); severe in ~1%<a class="cit" href="#s14" title="See reference 2">2</a><a class="cit" href="#s14" title="See reference 9">9</a></td><td>Vomiting <span class="n">~20%</span>; diarrhoea, dysgeusia</td></tr>
+    <tr><td>Mechanism of reaction</td><td>Non-IgE histamine release — dose- and rate-related</td><td>—</td></tr>
+    <tr><td>Curious inverse relationship</td><td>Reactions are <em>more</em> common at low paracetamol concentrations (25% if &lt;150 mcg/mL vs 3% if &gt;300), because paracetamol itself inhibits mast-cell histamine release</td><td>Unrelated to dose ingested</td></tr>
+    <tr><td>Preparation error rate</td><td>Up to <span class="n">33%</span> with the three-bag system; 19% had &gt;1 h interruption</td><td>Low</td></tr>
+    <tr><td>Preferred when</td><td>Fulminant hepatic failure (only route studied) · intractable vomiting · inability to protect the airway · commonly preferred in pregnancy</td><td>IV unavailable, not tolerated, or reaction-limited</td></tr>
+  </table>
+  </div>
+
+  <div class="note">
+    <b>Managing an anaphylactoid reaction</b>
+    <strong>Mild</strong> — flushing, erythema: continue with close monitoring. <strong>Urticaria</strong>: antihistamine, continue.<br>
+    <strong>Severe — hypotension, bronchospasm, airway swelling or anaphylaxis: stop the infusion and treat it as anaphylaxis.</strong> That means <strong>intramuscular epinephrine</strong> as first-line, plus oxygen, airway support and IV fluids, with antihistamine and bronchodilator as adjuncts. Antihistamines alone are not adequate treatment for a severe reaction. Corticosteroids are not required for the underlying mechanism, which is non-immunological histamine release.<br>
+    Once symptoms have resolved and the patient is clinically stable, <strong>restart NAC at an appropriately reduced rate</strong> if it remains indicated — traditionally after about an hour, but stabilisation rather than a fixed interval is the governing principle, and severe reactions warrant toxicology guidance on restarting. Do not abandon NAC for a mild reaction — undertreated patients do worse. If reactions persist or worsen, switch to the oral route. A previous anaphylactoid reaction is not an absolute contraindication to re-use.
+  </div>
+
+  <h3>Comparing the IV protocols</h3>
+  <p>All three IV regimens deliver the same total dose over the first 20–21 hours (SNAP compresses it into 12) — they differ in how that dose is shaped over time, and that shape is what drives the difference in reaction rates and preparation errors. None has been shown superior to the traditional three-bag protocol for preventing hepatotoxicity; the trials were designed and powered to detect a difference in adverse reactions, not efficacy.</p>
+
+  <div class="scroll">
+  <table>
+    <tr><th></th><th>Standard three-bag</th><th>Two-bag</th><th>SNAP</th></tr>
+    <tr><td>Structure</td><td class="n">150 / 50 / 100 mg/kg over 1 / 4 / 16 h</td><td class="n">200 / 100 mg/kg over 4 / 16 h</td><td class="n">100 / 200 mg/kg over 2 / 10 h</td></tr>
+    <tr><td>Duration</td><td class="n">21 h</td><td class="n">20 h</td><td class="n">12 h</td></tr>
+    <tr><td>Total dose</td><td class="n">300 mg/kg</td><td class="n">300 mg/kg</td><td class="n">300 mg/kg</td></tr>
+    <tr><td>Anaphylactoid reactions</td><td>Reference regimen</td><td>Reduced vs three-bag in comparative series (~4.3% vs ~10%)</td><td><strong>Severe reactions cut from 31% to 5%</strong> in a randomised trial against the standard three-bag arm</td></tr>
+    <tr><td>Hepatotoxicity</td><td>Reference</td><td>No difference detected</td><td>No difference detected (2% vs 3%) — <strong>trial not powered for equivalence</strong></td></tr>
+    <tr><td>Preparation steps</td><td class="n">Three bags — up to 33% error rate</td><td class="n">Two bags — fewer steps, fewer errors</td><td class="n">Two bags — fewer steps, fewer errors</td></tr>
+    <tr><td>Evidence base</td><td>Traditional; most widely used worldwide</td><td>Comparative series; growing adoption</td><td>Randomised controlled trial (Bateman et al., <em>Lancet</em> 2014)<a class="cit" href="#s14" title="See reference 9">9</a></td></tr>
+  </table>
+  </div>
+
+  <div class="note">
+    <b>When to specifically consider SNAP</b>
+    SNAP exists to solve one problem: <strong>anaphylactoid reactions</strong>, not efficacy. Reach for it when reducing that risk is the priority —
+    <ul class="tight" style="margin:10px 0 0">
+      <li>a <strong>documented anaphylactoid reaction</strong> to standard-rate IV NAC in this patient previously;</li>
+      <li>a low presenting paracetamol concentration <span style="color:var(--slate)">(reactions are paradoxically <em>more</em> common when the concentration is low, since paracetamol itself suppresses mast-cell histamine release)</span>;</li>
+      <li>a department or unit specifically trying to reduce reaction-related treatment interruptions in a high-risk ingestion, where uninterrupted NAC delivery matters most;</li>
+      <li>a shorter administration window is operationally advantageous (12 h vs 21 h) and IV access is secure throughout.</li>
+    </ul>
+    <p style="margin:10px 0 0">It is <strong>not</strong> a stronger or faster-acting regimen — the trial found similar hepatotoxicity, not better, and was not designed to prove equivalence. Choose the standard three-bag or two-bag protocol as the default; reach for SNAP when reaction risk specifically is the concern.</p>
+  </div>
+
+  <h3 id="calc">NAC dose calculator</h3>
+
+  <div class="card tool">
+    <div class="note" style="margin:0 0 16px">
+      <b>US/Canada consensus: cap dosing weight at 100 kg</b>
+      For the consensus regimen, <strong>calculate NAC using a maximum body weight of 100 kg</strong> in patients who weigh more than 100 kg. The calculator below applies this automatically — but a clinician reproducing the mg/kg arithmetic by hand on actual body weight will arrive at a different, higher dose. Some authorities use 110 kg in obesity and pregnancy; follow your local protocol.
+    </div>
+    <div class="card-label"><span>Regimen builder</span><b>Verify against your local protocol<a class="cit" href="#s14" title="See reference 2">2</a><a class="cit" href="#s14" title="See reference 6">6</a></b></div>
+
+    <div class="grid3" style="margin-bottom:14px">
+      <div>
+        <label class="f" for="wt">Weight (kg)</label>
+        <input type="number" id="wt" value="70" min="1" max="250" step="0.5">
+      </div>
+      <div>
+        <label class="f" for="regimen">Regimen</label>
+        <select id="regimen">
+          <option value="3bag">IV three-bag, 21 h (standard)</option>
+          <option value="2bag">IV two-bag, 20 h</option>
+          <option value="snap">IV SNAP, 12 h</option>
+          <option value="oral">Oral, 72 h (17 + 1 doses)</option>
+        </select>
+      </div>
+      <div>
+        <label class="f" for="scenario">Adjustment</label>
+        <select id="scenario">
+          <option value="std">None</option>
+          <option value="massive">High-risk ingestion (≥30 g or above the 300 line)</option>
+          <option value="hd">Concurrent haemodialysis</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="nacOut"></div>
+  </div>
+
+  <div class="note">
+    <b>Activated charcoal in high-risk ingestion</b>
+    <strong>Consider activated charcoal beyond 4 hours in a high-risk ingestion</strong> (≥ 30 g, or a concentration on or above the 300 line) where ongoing absorption is plausible and the airway is protected. Absorption can be prolonged after very large ingestions and with co-ingested opioids or antimuscarinics, so the conventional 1–2 hour window does not apply to these patients.
+  </div>
+
+  <details>
+    <summary>Activated charcoal — the general case</summary>
+    <div class="body">
+      <p>Yes, when it is safe. Charcoal given soon after ingestion measurably reduces the number of patients whose concentration lands above the treatment line. It is most effective within 1–2 hours but reasonable later in the absence of contraindications, particularly for massive ingestion. Gastric emptying has no routine role — absorption is too fast and the antidote too good.</p>
+      <p>The old worry about charcoal adsorbing oral NAC is not clinically important. In practice absorption is complete by 4 h and NAC starts between 4 and 8 h, so the doses separate naturally. If repeated charcoal is needed, prefer IV NAC; if using oral, separate by 1–2 hours and <strong>give NAC priority for the first dose.</strong></p>
+    </div>
+  </details>
+</section>
+
+<!-- ======================= 08 ======================= -->
+<section id="s8">
+  <div class="sec-head"><span class="sec-num">08</span><h2>When to stop — the question protocols get wrong</h2></div>
+
+  <p class="lede">The concept of a fixed-length course is obsolete. Start NAC when the patient is at risk, continue while risk or injury persists, stop when both are gone. That single sentence replaces "21 hours" and "72 hours" alike.</p>
+
+  <p>The American College of Medical Toxicology updated its practice statement on this in <strong>January 2026</strong>, representing the positions of ACMT and the American Academy of Clinical Toxicology. Its position is unambiguous: 21 hours of IV NAC prevents hepatotoxicity in most patients after acute overdose, but continuing beyond 21 hours is <em>essential</em> in some, and it is vitally important to check for unmetabolised paracetamol and evidence of hepatic injury <strong>before stopping any protocol</strong>.</p>
+
+  <div class="card tool" id="stopcrit">
+    <div class="card-label"><span>Stopping checklist — ACMT 2026</span><b>All four required</b></div>
+    <p style="font-size:15px;margin:0 0 4px">Tick each criterion your patient meets. IV NAC is discontinued only when all four are satisfied.<a class="cit" href="#s14" title="See reference 4">4</a></p>
+    <ul class="check" id="stopList">
+      <li data-k="1"><span class="box"></span><div>Paracetamol concentration <strong>&lt; 10 mcg/mL</strong> <small>The 2026 ACMT statement's own wording is "undetectable acetaminophen concentration (&lt;10 μg/mL)" — a single combined criterion, not two synonymous phrasings. We display the numeric threshold rather than the word "undetectable" alone because laboratory reporting limits vary between assays, and the underlying literature does not establish one reporting cutoff as superior to another; the &lt;10 μg/mL figure is what operationalises ACMT's own "undetectable" for a chapter that may be read against different laboratories.</small></div></li>
+      <li data-k="2"><span class="box"></span><div>Aminotransferases improving — ALT/AST at the patient's baseline, or fallen 25–50% from peak <small>ACMT specifies ALT/AST; either is acceptable. AST typically declines earlier, so it shows recovery sooner.</small></div></li>
+      <li data-k="3"><span class="box"></span><div>INR &lt; 2.0 <small>Remember NAC itself mildly raises INR</small></div></li>
+      <li data-k="4"><span class="box"></span><div>Prognostic markers improving <small>Creatinine, lactate, pH, phosphate</small></div></li>
+    </ul>
+    <div id="stopVerdict" class="verdict"></div>
+  </div>
+
+  <h4>Reasons a course must be extended</h4>
+  <ul class="tight">
+    <li><strong>Altered absorption after massive ingestion</strong>, or co-ingestants that slow gastric motility (opioids, antimuscarinics) — producing persistently elevated or "double-hump" (Bactrian) concentrations.</li>
+    <li><strong>Hepatic injury slowing paracetamol metabolism</strong> and prolonging its apparent half-life.</li>
+    <li><strong>Established hepatic failure</strong> — continue IV NAC at 6.25 mg/kg/h until the <a href="#stopcrit">full ACMT stopping criteria above</a> are satisfied (paracetamol &lt; 10 mcg/mL, improving aminotransferases, INR &lt; 2, improving prognostic markers), or until transplantation. Duration should be individualised with medical toxicology and hepatology input — do not rely on INR and encephalopathy alone as an abbreviated rule.</li>
+  </ul>
+
+  <div class="note">
+    <b>Shorter is sometimes fine — in the right patient</b>
+    Shortened-course protocols (NACSTOP, SARPO) have performed well in <em>selected low-risk</em> patients under study conditions. ACMT explicitly does not evaluate them as general practice. Treat brevity as a research-supported option for the clearly low-risk, not a default. SNAP is a distinct case worth separating from these two — its 12-hour duration is a side effect of redistributing the dose to <strong>reduce anaphylactoid reactions</strong>, not a duration-shortening strategy in its own right; see the protocol-comparison note in Section 7 for when to reach for it specifically.
+  </div>
+</section>
+
+<!-- ======================= 09 ======================= -->
+<section id="s9">
+  <div class="sec-head"><span class="sec-num">09</span><h2>High-risk ("massive") overdose: when standard-dose NAC may not be enough</h2></div>
+
+  <p>The older literature uses the inconsistently defined term <strong>"massive overdose"</strong> — sometimes by dose, sometimes by concentration, sometimes by the presence of acidosis or altered consciousness. The 2023 consensus instead uses the operational term <strong>high-risk ingestion</strong>: ≥ 30 g ingested, or a concentration on or above the 300 line. These populations overlap substantially but are <strong>not necessarily identical</strong> — a patient who is "massive" by an old dose-based definition may not meet the consensus concentration criterion, and vice versa. This chapter uses "high-risk" specifically when citing the 2023 consensus definition, and "massive" when discussing the older dose-escalation literature that does not map cleanly onto it.</p>
+
+  <p>Goldfrank's states that the standard IV infusion rate of 6.25 mg/kg/h was originally derived to treat a 16 g ingestion — cite it as that textbook's account of the historical derivation rather than as an independently established pharmacological fact. Early treatment failures in the published literature have predominantly been reported with the <strong>standard IV regimen after very large ingestions</strong>; higher NAC dosing (including the oral protocol's higher hourly dose of 17.5 mg/kg/h) has therefore been proposed for selected high-risk cases, though the optimal escalation strategy remains uncertain and is not established by a systematic comparison.</p>
+
+  <h4>Escalating NAC — toxicologist-directed, not standard care</h4>
+  <p>ACMT's position is that double or triple dosing <em>may be appropriate</em> after massive overdose, with the final infusion increased in proportion to the amount ingested or the concentration. That is permission to individualise, not a protocol. The specific regimens below are published approaches; <strong>none has been formally studied against the standard protocol</strong>, and none should be started without specialist advice.</p>
+  <ul class="tight">
+    <li><strong>The trigger to consider escalation</strong> is the consensus high-risk category: ≥ 30 g ingested, or a concentration on or above the <strong>300 line</strong>. The consensus says many clinicians increase the dose here but that the evidence does not support specifying one.</li>
+    <li>Concentration above the <strong>500 line</strong> (a threshold from the dose-escalation literature, not a consensus term): one described approach is standard IV dosing <em>plus</em> standard oral dosing. Where oral is impossible (somnolence, caustic co-ingestion), an alternative is the IV loading dose followed by <span class="val">12.5 mg/kg/h</span> for the remainder.</li>
+    <li>Presentation later than 8 h with a level above the 500 line: the same escalated infusion has been suggested.</li>
+    <li>Call your poison centre before choosing between them. This is precisely the decision the consensus and ACMT statements refer to specialist judgement.</li>
+  </ul>
+
+  <h3>Extracorporeal removal</h3>
+  <p>Paracetamol is an excellent dialysis candidate — small volume of distribution, low protein binding, low molecular weight — and is efficiently removed by intermittent haemodialysis, which substantially shortens its elimination half-life. Case reports describe removal of large absolute quantities of drug during a single session.<a class="cit" href="#s14" title="See reference 7">7</a> Exact clearance and half-life-reduction figures are omitted here because the primary pharmacokinetic studies underlying them have not been independently retrieved and verified for this chapter — see the sourcing note below.</p>
+
+  <div class="scroll">
+  <table>
+    <tr><th>Trigger (EXTRIP<a class="cit" href="#s14" title="See reference 7">7</a>)</th><th>Threshold</th></tr>
+    <tr><td>Concentration alone, <strong>NAC not administered</strong></td><td class="n">&gt; 1000 mcg/mL</td></tr>
+    <tr><td>Altered mental status <strong>AND</strong> metabolic acidosis <strong>AND</strong> elevated lactate, <strong>NAC not administered</strong></td><td class="n">&gt; 700 mcg/mL</td></tr>
+    <tr><td>Altered mental status <strong>AND</strong> metabolic acidosis <strong>AND</strong> elevated lactate, <strong>with NAC running</strong></td><td class="n">&gt; 900 mcg/mL</td></tr>
+  </table>
+  </div>
+
+  <div class="note" style="border-color:#E5B9C6;background:#FDF1F4;border-left-color:var(--napqi)">
+    <b style="color:var(--napqi)">The 1000 mcg/mL figure is conditional</b>
+    A concentration above 1000 mcg/mL is an EXTRIP indication for dialysis <strong>when NAC has not been administered</strong>. Once NAC is running, the operative criterion is <strong>&gt; 900 mcg/mL together with altered mental status AND metabolic acidosis AND elevated lactate — all three together, not any one alone</strong>. This combination reflects mitochondrial dysfunction from a massive ingestion, and EXTRIP requires the full triad, not any single feature. Some secondary sources state ">1000 regardless of therapy"; read the EXTRIP conditions in full before quoting a bare number.
+  </div>
+
+  <div class="warn">
+    <b>Dialysis removes the antidote too</b>
+    Haemodialysis clears NAC substantially, so <strong>NAC must be continued at an increased rate throughout dialysis</strong> — that is the EXTRIP recommendation<a class="cit" href="#s14" title="See reference 7">7</a>, and EXTRIP itself does not specify a number. The figure of <strong>at least 12.5 mg/kg/h during haemodialysis</strong> comes from the 2023 US/Canada consensus<a class="cit" href="#s14" title="See reference 6">6</a>, which recommends at least that IV infusion rate; it is double the standard third-bag rate. NAC removal is substantially greater with intermittent haemodialysis than with continuous modalities such as CVVH; <strong>NAC dosing during CRRT should be individualised with toxicology and pharmacy input</strong> rather than following a fixed rule, since the available pharmacokinetic evidence does not establish a specific unadjusted-dosing recommendation for continuous therapies. Dialysis does not remove protein adducts.
+    <br><br><em style="font-size:13.5px">Source note: Goldfrank's Antidotes in Depth A3 quotes a haemodialysis extraction ratio of 50–76% and a CVVH extraction ratio of ~13%, attributed there to primary pharmacokinetic studies. <strong>Those primary studies have not been independently retrieved or verified for this chapter</strong>, so the exact percentages are withheld from the main text above and given here only with that explicit caveat. Do not cite 50–76%/~13% as established without tracing them to source.</em>
+  </div>
+
+  <details>
+    <summary>Fomepizole as an adjunct — where the evidence sits</summary>
+    <div class="body">
+      <p>Fomepizole inhibits CYP2E1 and therefore reduces NAPQI formation upstream, and appears to inhibit JNK-mediated mitochondrial injury downstream. Its use in massive paracetamol overdose rests on case reports and small series, typically as part of a "triple therapy" with NAC and haemodialysis in patients with concentrations in the thousands of µmol/L, coma, acidosis and shock — several of whom recovered without organ failure.</p>
+      <p><strong>Fomepizole remains investigational for this indication.</strong> Evidence is insufficient to recommend it in routine practice, and it should only be used after consultation with a medical toxicologist. ACMT's 2026 duration statement lists fomepizole among the therapies to be individualised in consultation with an expert — that is an acknowledgment that the conversation should happen, not a recommendation to give it, and the statement itself is about NAC duration rather than fomepizole efficacy.</p>
+    </div>
+  </details>
+</section>
+
+<!-- ======================= 10 ======================= -->
+<section id="s10">
+  <div class="sec-head"><span class="sec-num">10</span><h2>Special populations</h2></div>
+
+  <div class="tabs" id="popTabs" role="tablist"></div>
+  <div class="tabbox" id="popBox"></div>
+</section>
+
+<!-- ======================= 11 ======================= -->
+<section id="s11">
+  <div class="sec-head"><span class="sec-num">11</span><h2>Prognosis and transplantation</h2></div>
+
+  <p>Fatalities from fulminant hepatic failure generally occur 3–5 days after acute overdose, most often through multiorgan failure — ARDS, sepsis, cerebral oedema — rather than haemorrhage. Intracranial hypertension with herniation is the commonest terminal event, and infection directly causes about 20% of deaths in ALF.</p>
+
+  <div class="card tool">
+    <div class="card-label"><span>King's College Criteria — transplant-centre referral support</span><b>Pathway A <em style="font-style:normal;color:var(--slate)">OR</em> Pathway B</b></div>
+    <p style="font-size:15px;margin:0 0 14px">The criteria are <strong>not</strong> five independent items. Either the pH criterion alone, <em>or</em> all three of creatinine, INR and encephalopathy together. Lactate is a later modification and is shown separately.</p>
+    <div class="grid3" style="margin-bottom:12px">
+      <div><label class="f" for="kPh">Arterial pH (after fluid resuscitation)</label><input type="number" id="kPh" step="0.01" value="7.40"></div>
+      <div><label class="f" for="kLac">Lactate (mmol/L, post-resuscitation)</label><input type="number" id="kLac" step="0.1" value="1.5"></div>
+      <div><label class="f" for="kCr">Creatinine (mg/dL)</label><input type="number" id="kCr" step="0.1" value="1.0"></div>
+      <div><label class="f" for="kInr">INR</label><input type="number" id="kInr" step="0.1" value="1.2"></div>
+      <div><label class="f" for="kEnc">Encephalopathy grade</label><select id="kEnc"><option value="0">None</option><option value="1">I — slowed thought, slurred speech, slight tremor</option><option value="2">II — drowsiness, inappropriate behaviour</option><option value="3">III — hypersomnolent, incoherent, marked confusion</option><option value="4">IV — coma, unresponsive to pain</option></select></div>
+    </div>
+    <div id="kccOut" class="verdict"></div>
+  </div>
+
+  <p>Historically these criteria predicted a very low chance of survival without transplantation. <strong>Survival without transplantation has improved substantially in the modern era</strong>, largely attributed to prolonged NAC and better supportive care — a specific contemporary percentage is not quoted here pending a primary source, but the direction and clinical implication are clear: the criteria should prompt urgent referral and discussion, not fatalism.</p>
+
+  <div class="scroll">
+  <table>
+    <tr><th>Score</th><th colspan="2">Performance in cited cohort<a class="cit" href="#s14" title="See reference 1">1</a></th><th>Cohort &amp; endpoint</th></tr>
+    <tr><td>King's College Criteria</td><td class="n">Sens 47%</td><td class="n">Spec 83%</td><td rowspan="5" style="font-size:13.5px">All five rows come from a <strong>single 125-patient cohort of paracetamol-induced liver failure</strong> (Cholongitas et al., reproduced in Goldfrank's Table 33–2), with the endpoint <strong>death or transplantation</strong>. These are not stable properties of the scores. A systematic review of paracetamol ALF reported pooled original-KCC sensitivity of about 58% and specificity about 95% — a very different picture from the same criteria. Always read a sensitivity with its population, timing and endpoint attached.</td></tr>
+    <tr><td>APACHE II &gt; 12</td><td class="n">Sens 67%</td><td class="n">Spec 76%</td></tr>
+    <tr><td>SOFA &gt; 12</td><td class="n">Sens 67%</td><td class="n">Spec 80%</td></tr>
+    <tr><td>MELD &gt; 32</td><td class="n">Sens 89%</td><td class="n">Spec 25%</td></tr>
+    <tr><td>Lactate &gt; 3.3 mmol/L</td><td class="n">Sens 91%</td><td class="n">Spec 52%</td></tr>
+  </table>
+  </div>
+
+  <div class="warn">
+    <b>Do not correct the INR to feel better</b>
+    Haemorrhage is rare in paracetamol-induced liver failure. Fresh frozen plasma and prothrombin complex concentrate should be given for bleeding, high-risk procedures or known trauma — never for a number. Transfusing clotting factors improves the INR without improving the liver, and destroys the prognostic information you need for the transplant decision. Vitamin K is a partial exception: Goldfrank's notes that if it produces an improvement, viable hepatocytes remain — a bedside observation, not a validated prognostic test, and it should never be used in place of formal transplant assessment.
+  </div>
+
+  <p><strong>Emergency liver transplantation substantially improves survival</strong> in appropriately selected patients with acetaminophen-induced acute liver failure, though reported survival figures vary by era, country and selection criteria and are not reproduced here without a primary source attached. The window for successful transplantation is often under 24 hours, so patients with severe coagulopathy, renal failure, acidosis, hypoglycaemia or encephalopathy belong in a liver unit early. Psychiatric assessment is an essential part of the evaluation — a suicide attempt does not by itself preclude transplantation; long-term outcomes in patients selected for transplant after intentional overdose are reported to be comparable to other indications, though exact rates again require primary sourcing before publication.</p>
+</section>
+
+<!-- ======================= 12 ======================= -->
+<section id="s12">
+  <div class="sec-head"><span class="sec-num">12</span><h2>Self-assessment</h2></div>
+  <p>Six cases. Pick an answer to reveal the reasoning.</p>
+  <div id="quiz"></div>
+  <div id="quizScore" style="font-family:var(--mono);font-size:13px;color:var(--slate);margin-top:8px"></div>
+</section>
+
+<!-- ======================= 13 ======================= -->
+<section id="s13">
+  <div class="sec-head"><span class="sec-num">13</span><h2>Chapter summary</h2></div>
+  <div class="card">
+    <ul class="tight" style="margin:0">
+      <li>Plot a <strong>single</strong> concentration drawn at or after 4 hours on the 150 line, using the <strong>earliest</strong> possible ingestion time. On or above the line, treat.</li>
+      <li>After repeated supratherapeutic ingestion, treat if the concentration is <strong>≥ 20 mcg/mL</strong>, or if <strong>AST/ALT is abnormal — unless that abnormality is known to represent the patient's own baseline</strong> (2023 US/Canada consensus algorithm; the consensus prose elsewhere says "greater than," so treat an exactly-20 value as positive rather than leaving it in a gap). This chapter has not itself directly viewed the corrected Figure 4 image; the ≥20 mcg/mL threshold, the RSTI time tiers, and the baseline-AST/ALT qualifier are stated here on the strength of multiple independent secondary sources describing the corrected algorithm. Goldfrank's uses a more conservative ≥ 10 mcg/mL for the treatment threshold. Do not confuse either with the <strong>&lt; 10 mcg/mL</strong> threshold for <em>stopping</em> NAC.</li>
+      <li>NAC is <strong>highly effective when started within 8 hours in conventional acute overdose</strong>. Late presentation is not a reason to withhold it — benefit has been demonstrated even in established acetaminophen-induced acute liver failure. High-risk and massive ingestions can fail standard dosing despite early treatment.</li>
+      <li>Both routes are effective when given promptly and correctly. IV is preferred in hepatic failure, intractable vomiting and an unprotected airway, and is commonly preferred in pregnancy — but oral is not known to be inferior. Expect anaphylactoid reactions in up to 18%; treat through the mild ones and manage severe reactions as anaphylaxis with <strong>IM epinephrine</strong>.</li>
+      <li>Stop NAC only when all four ACMT criteria are met: paracetamol &lt; 10 mcg/mL, improving transaminases, INR &lt; 2, improving prognostic markers.</li>
+      <li>In <strong>high-risk ingestion</strong> (≥ 30 g, or a concentration on/above the <strong>300 line</strong>), discuss increased NAC dosing with a medical toxicologist — the consensus says many clinicians escalate here but does not specify a regimen. Specific regimens proposed above the <strong>500 line</strong> come from older dose-escalation literature, not the consensus itself; treat them as toxicologist-directed options, not standard protocol. Extracorporeal removal is likewise a specialist decision. During haemodialysis, run IV NAC at ≥ 12.5 mg/kg/h.</li>
+      <li>King's College Criteria support identification of patients needing urgent transplant-centre assessment; failing to meet them does not indicate safety, and meeting them does not establish that a transplant is necessary. Survival without transplantation has improved substantially in the modern era — treat KCC as a referral trigger, not a deterministic mortality figure.</li>
+      <li>Patients who recover generally regain <strong>normal hepatic function, without chronic liver disease attributable to the overdose</strong>. That reassurance is worth giving to the patient.</li>
+      <li>In Saudi Arabia, use your institution's established route to toxicology (public enquiries begin with MOH <strong>937</strong>; the 1937 consultation pathway is described in the literature but is not verified here as current policy). Call early.</li>
+      <li>Many toxicologists routinely obtain a paracetamol concentration in deliberate self-poisoning even when the history does not mention it — a Saudi ED study found detectable levels in 0.9% and a treatable level in 0.2% of patients screened despite a negative history.<a class="cit" href="#s14" title="See reference 21">21</a> This is a widely followed <strong>safety practice, not a universal guideline mandate</strong>; some evidence supports selective screening when a thorough, reliable history excludes paracetamol. Apply your own department's policy.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ======================= 14 ======================= -->
+<section id="s14">
+  <div class="sec-head"><span class="sec-num">14</span><h2>Sources</h2></div>
+
+  <h4>Core texts supplied</h4>
+  <ol class="refs">
+    <li>Hendrickson RG. <em>Acetaminophen.</em> In: Goldfrank's Toxicologic Emergencies, Ch. 33.</li>
+    <li>Hendrickson RG, Howland MA. <em>Antidotes in Depth A3: N-Acetylcysteine.</em> Goldfrank's Toxicologic Emergencies.</li>
+    <li>Bateman DN. <em>Acetaminophen/Paracetamol.</em> In: Brent J, Burkhart K, Dargan P, et al., eds. Critical Care Toxicology, 2nd ed. Springer; 2017: Ch. 59, pp. 1112–1129.</li>
+  </ol>
+  <h4>Guidelines and position statements</h4>
+  <ol class="refs" start="4">
+    <li>Meadows JW, Hendrickson RG, Stolbach AI. <em>ACMT Practice Statement: Duration of Intravenous Acetylcysteine Therapy following Acetaminophen Overdose (2026 update).</em> J Med Toxicol. 2026. doi:10.1007/s13181-026-01130-y — represents the positions of the American College of Medical Toxicology and the American Academy of Clinical Toxicology.</li>
+    <li>American College of Medical Toxicology. <em>ACMT Position Statement: Duration of Intravenous Acetylcysteine Therapy Following Acetaminophen Overdose.</em> J Med Toxicol. 2017;13(1):126–7. doi:10.1007/s13181-016-0542-z</li>
+    <li>Dart RC, Mullins ME, Matoushek T, Ruha AM, Burns MM, Simone K, et al. <em>Management of Acetaminophen Poisoning in the US and Canada: A Consensus Statement.</em> JAMA Netw Open. 2023;6(8):e2327739. doi:10.1001/jamanetworkopen.2023.27739. PMID 37552484. Erratum: JAMA Netw Open. 2023;6(9):e2337926. <strong>Primary source for the definitions of acute vs repeated supratherapeutic ingestion, the revised nomogram and its high-risk line, and the IV-paracetamol and pregnancy recommendations in this chapter.</strong></li>
+    <li>Gosselin S, Juurlink DN, Kielstein JT, et al.; EXTRIP Workgroup. <em>Extracorporeal treatment for acetaminophen poisoning: recommendations from the EXTRIP workgroup.</em> Clin Toxicol (Phila). 2014;52(8):856–67. doi:10.3109/15563650.2014.946994. Current recommendations: extrip-workgroup.org/acetaminophen</li>
+    <li>Hendrickson RG. <em>What is the most appropriate dose of N-acetylcysteine after massive acetaminophen overdose?</em> Clin Toxicol. 2019;57(8):686–91.</li>
+    <li>Bateman DN, Dear JW, Thanacoody HKR, et al. <em>Reduction of adverse effects from intravenous acetylcysteine treatment for paracetamol poisoning (SNAP).</em> Lancet. 2014;383:697–704.</li>
+    <li>Isbister G, Chiew A, Buckley N, et al. <em>A non-inferiority randomised controlled trial of a shorter acetylcysteine regimen — the SARPO trial.</em> J Hepatol. 2025;83:881–7.</li>
+    <li>Wong A, McNulty R, Taylor D, et al. <em>The NACSTOP Trial.</em> Hepatology. 2019;69:774–84.</li>
+  </ol>
+  <h4>Saudi and regional data</h4>
+  <ol class="refs" start="12">
+    <li>Almansori MA, Alhammadi HI, Almulhim FA. <em>Paracetamol overdose: analysis of a sample from a tertiary hospital in Eastern Saudi Arabia.</em> Saudi J Med Med Sci. 2015;3(3):209–12. doi:10.4103/1658-631X.162000 — single-centre retrospective chart review, 86 adults.</li>
+    <li>Alanazi MQ, et al. <em>The epidemiology of poisoning and overdose in Saudi Arabia: exposures, risks, management and outcomes.</em> Signa Vitae. 2024;20(5):54–61. doi:10.22514/sv.2024.035 — 39,439 poison-centre calls; population predominantly young children with unintentional exposure.</li>
+    <li>Al-Mousa FA, Gado AM, Attia AM, et al. <em>Medical toxicology experience: poisoning consultations cases registry in Saudi Ministry of Health — 2020 annual report.</em> Toxicol Rep. 2021;8:1558–64.</li>
+    <li><em>Poisoning epidemiology, clinical outcomes and management decisions for general public calls: a cross-sectional analysis of the nationwide Saudi Toxicology Consultation Service (1937).</em> J Epidemiol Glob Health. 2025.</li>
+    <li><em>Characteristics of paracetamol overdose before and during the COVID-19 pandemic, Saudi Arabia, 2019–2020.</em> Am J Health Med Nurs Pract. 2022.</li>
+    <li>Alsugoor MH. <em>Availability of antidotes for management of acute toxicity cases at emergency departments in Qassim hospitals.</em> Cureus. 2022;14(9):e28992. doi:10.7759/cureus.28992 — retrospective, single province.</li>
+    <li>Alaska YA, Alghadeer SM, Alrabiah AA, Harb A, Almadi B. <em>Assessment of N-acetylcysteine use for acetaminophen overdose in the emergency department of a community teaching hospital: a pilot study.</em> Saudi J Anaesth. 2023;17(2):168–173. doi:10.4103/sja.sja_707_22 — single-centre pilot audit, n = 29.</li>
+    <li>Saudi Food and Drug Authority. <em>Guidance for Paracetamol-Containing Oral Liquid Dosage Forms.</em> — labelling guidance only; it does not establish pack-size law.</li>
+    <li>Ministry of Health, Saudi Arabia. <em>937 Service.</em> moh.gov.sa/en/937</li>
+    <li>Alyahya B, Alalshaikh A, Almohawes M, Alnowiser M, Alsuliman O, Alrefaei R, Alaidarous S, Alnahdi M, Tamur S, Alfaifi M, Al Deeb M, Al Aseri ZA. <em>The clinical value of screening for acetaminophen in all patients with intentional overdose or altered mental status suspected to be secondary to overdose.</em> Front Pharmacol. 2025. doi:10.3389/fphar.2025.1633548 — Saudi ED cohort, n = 1517; detectable levels in 0.9% and treated levels in 0.2% despite a negative history.</li>
+  </ol>
+  <h4>Additional sources used in this revision</h4>
+  <ol class="refs" start="22">
+    <li>Cardona V, Ansotegui IJ, Ebisawa M, et al. <em>World Allergy Organization anaphylaxis guidance 2020.</em> World Allergy Organ J. 2020 — IM epinephrine as first-line for severe reactions.</li>
+    <li>American Association for the Study of Liver Diseases. <em>Defining and managing acute liver failure</em> and <em>Getting the knack of NAC</em> (Liver Fellow Network core series).</li>
+    <li>US Food and Drug Administration. <em>Pregnancy and Lactation Labeling Rule</em> — withdrawal of the A/B/C/D/X letter categories.</li>
+    <li>Filip AB, Berg SE, Mullins ME, Schwarz ES; ToxIC. <em>Fomepizole as an adjunctive therapy for acetaminophen poisoning.</em> Clin Toxicol. 2022;60(9):1006–11.</li>
+  </ol>
+</section>
+
+<footer>
+  <div style="margin-bottom:8px"><strong style="color:var(--ink)">Chapter 2 · Clinical Toxicology in Saudi Arabia</strong> &nbsp;·&nbsp; Author: Musa Suliman Alfaifi, Clinical Toxicologist &nbsp;·&nbsp; 18 August 2026 &nbsp;·&nbsp; Educational draft</div>
+  <div style="margin-bottom:8px">Guideline jurisdiction: US/Canada consensus (2023), ACMT (2026) and EXTRIP. Saudi practice may differ — follow your national or institutional protocol.</div>
+  Educational material for qualified clinicians. Every calculator here is a teaching aid, not a clinical decision system: it does not replace consultation with the Saudi Toxicology Consultation Service or a medical toxicologist. Verify all doses against your institutional protocol and the product insert before administration. Public poisoning enquiries in Saudi Arabia: MOH 937.
+</footer>
+
+</main>
+</div>
+</div>
+
+<script>
+"use strict";
+/* ============ CHAPTER MAP ============ */
+const SECTIONS=[
+ ["s1","Saudi context"],["s2","Pharmacology"],["s3","Clinical stages"],["s4","Risk framework"],
+ ["s5","The nomogram"],["s6","Laboratory"],["s7","NAC"],["s8","Stopping NAC"],
+ ["s9","Massive overdose"],["s10","Special populations"],["s11","Prognosis"],["s12","Self-assessment"],
+ ["s13","Summary"],["s14","Sources"]
+];
+const rail=document.getElementById('railList'), jump=document.getElementById('jump');
+SECTIONS.forEach((s,i)=>{
+  const n=String(i+1).padStart(2,'0');
+  rail.insertAdjacentHTML('beforeend',`<li><a href="#${s[0]}" data-t="${s[0]}"><i>${n}</i><span>${s[1]}</span></a></li>`);
+  jump.insertAdjacentHTML('beforeend',`<option value="${s[0]}">${n} — ${s[1]}</option>`);
+});
+jump.addEventListener('change',e=>{document.getElementById(e.target.value).scrollIntoView()});
+
+const prog=document.getElementById('prog');
+function onScroll(){
+  const h=document.documentElement;
+  const p=h.scrollTop/(h.scrollHeight-h.clientHeight||1);
+  prog.style.width=Math.min(100,Math.max(0,p*100))+'%';
+  let cur=SECTIONS[0][0];
+  for(const [id] of SECTIONS){
+    const el=document.getElementById(id);
+    if(el && el.getBoundingClientRect().top<160) cur=id;
+  }
+  document.querySelectorAll('nav.rail a').forEach(a=>a.classList.toggle('on',a.dataset.t===cur));
+  if(jump.value!==cur) jump.value=cur;
+}
+window.addEventListener('scroll',onScroll,{passive:true});
+
+/* ============ SHARED MATH ============ */
+const line=(base,t)=>base*Math.pow(0.5,(t-4)/4);   // 4-hour half-life convention
+const MCG_PER_UMOL=1/6.62;
+
+/* ============ HERO STRIP ============ */
+(function(){
+  const g=document.getElementById('heroG'), W=900,H=150,pl=48,pr=16,pt=16,pb=26;
+  const X=t=>pl+(t/26)*(W-pl-pr);
+  const Y=c=>pt+((Math.log10(400)-Math.log10(c))/(Math.log10(400)-Math.log10(2)))*(H-pt-pb);
+  let s='';
+  [2,10,100,400].forEach(v=>{
+    s+=`<line x1="${pl}" x2="${W-pr}" y1="${Y(v)}" y2="${Y(v)}" stroke="#DDE2DA" stroke-width="1"/>`;
+    s+=`<text x="${pl-7}" y="${Y(v)+3.5}" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="9" fill="#8A9A9F">${v}</text>`;
+  });
+  [4,8,12,16,20,24].forEach(t=>{
+    s+=`<line x1="${X(t)}" x2="${X(t)}" y1="${pt}" y2="${H-pb}" stroke="#E7EBE4" stroke-width="1"/>`;
+    s+=`<text x="${X(t)}" y="${H-pb+15}" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9" fill="#8A9A9F">${t}h</text>`;
+  });
+  let pts=[],top=[];
+  for(let t=4;t<=24;t+=0.5){pts.push(`${X(t)},${Y(line(150,t))}`);}
+  top=`${X(24)},${pt} ${X(4)},${pt}`;
+  s+=`<polygon points="${pts.join(' ')} ${top}" fill="url(#riskFill)"/>`;
+  s+=`<polyline points="${pts.join(' ')}" fill="none" stroke="#C81D4E" stroke-width="2.2"/>`;
+  s+=`<text x="${X(5.2)}" y="${Y(150)-9}" font-family="IBM Plex Mono,monospace" font-size="10" fill="#C81D4E" letter-spacing="1">TREAT ABOVE THIS LINE</text>`;
+  s+=`<text x="${X(15)}" y="${Y(9)}" font-family="IBM Plex Mono,monospace" font-size="10" fill="#5A6C76" letter-spacing="1">TOXICITY UNLIKELY BELOW</text>`;
+  s+=`<circle cx="${X(4)}" cy="${Y(150)}" r="4" fill="#C81D4E"/><circle cx="${X(24)}" cy="${Y(4.69)}" r="3" fill="#C81D4E" opacity=".5"/>`;
+  g.innerHTML=s;
+})();
+
+/* ============ 02 METABOLISM (qualitative schematic — no numeric output) ============ */
+(function(){
+  const sl=document.getElementById('doseSlider'),out=document.getElementById('doseOut'),V=document.getElementById('metabVerdict');
+  const BANDS=[
+    {max:75, conj:[90,'handles nearly all of the dose'], cyp:[12,'small and steady'], gsh:[95,'ample reserve'], free:[2,'none expected'],
+     cls:'safe', h:'Therapeutic to sub-toxic',
+     p:'Conjugation absorbs the load and the small NAPQI stream is detoxified as fast as it forms. Serious liver damage after a single 75 mg/kg dose is rare even in patients at increased risk. Protein adducts form even at therapeutic doses — their presence alone is not toxicity.'},
+    {max:149, conj:[78,'beginning to saturate'], cyp:[26,'increasing'], gsh:[70,'reserve being consumed'], free:[4,'none expected'],
+     cls:'warn', h:'Grey zone',
+     p:'In a patient without risk factors, a dose below 150 mg/kg is unlikely to cause serious liver damage. But conjugation is saturating and reserve is being consumed. Assess with a timed concentration; do not dismiss on dose history alone.'},
+    {max:299, conj:[60,'saturated'], cyp:[48,'high'], gsh:[34,'falling toward the injury threshold'], free:[30,'binding begins'],
+     cls:'treat', h:'Toxic range',
+     p:'Conjugation is saturated and NAPQI production climbs. In experimental models, injury becomes evident once glutathione falls to roughly 30% of baseline; in patients, the timing of that depletion varies. This is the population the nomogram was built for.'},
+    {max:499, conj:[48,'overwhelmed'], cyp:[66,'very high'], gsh:[12,'depleted'], free:[62,'widespread'],
+     cls:'treat', h:'Severe ingestion',
+     p:'NAPQI generation outstrips glutathione turnover. Expect a concentration well above the treatment line, monitor pH and lactate, and involve toxicology early — escalated NAC dosing may be considered on specialist advice.'},
+    {max:9999, conj:[42,'overwhelmed'], cyp:[78,'maximal'], gsh:[3,'exhausted'], free:[88,'extensive'],
+     cls:'treat', h:'Massive ingestion',
+     p:'Early lactic acidosis and altered mental status may appear from mitochondrial inhibition before any hepatic injury. Give activated charcoal if safe, start NAC immediately, and discuss escalated dosing and extracorporeal removal with a medical toxicologist.'}
+  ];
+  function upd(){
+    const d=+sl.value; out.textContent=d+' mg/kg';
+    const b=BANDS.find(x=>d<=x.max);
+    [['conj',b.conj],['cyp',b.cyp],['gsh',b.gsh],['free',b.free]].forEach(([k,v])=>{
+      document.getElementById('i-'+k).style.width=v[0]+'%';
+      document.getElementById('v-'+k).textContent=v[1];
+    });
+    V.className='verdict '+b.cls;
+    V.innerHTML='<div class="sub">Interpretation</div><h5>'+b.h+'</h5><p style="margin:0">'+b.p+'</p>';
+  }
+  sl.addEventListener('input',upd); upd();
+})();
+
+/* ============ 03 STAGES ============ */
+(function(){
+  const D={
+   1:{t:"Stage I — the deceptive phase",w:"0 – 24 hours · injury not yet clinically or biochemically evident",b:`
+     <p>Most patients, including those who will go on to severe hepatotoxicity, are <strong>asymptomatic</strong>. When findings exist they are non-specific: nausea, vomiting, malaise, pallor, diaphoresis. Liver function tests are usually normal early in this phase.</p>
+     <p><strong>"Usually" is doing real work in that sentence.</strong> Hepatic injury is not clinically or biochemically evident during the early part of Stage I, but there is no biological boundary at 24 hours: in the most severely poisoned patients AST can begin to rise as early as <strong>12 hours</strong>. Treat the stages as a description of the usual tempo, not a schedule the liver is obliged to keep.</p>
+     <p>After massive ingestion, however, depressed consciousness, metabolic acidosis with raised lactate, and even death can occur in this window <em>without any evidence of hepatotoxicity</em> — driven by inhibition of mitochondrial electron transport.</p>
+     <p style="margin-bottom:0"><strong>What to do:</strong> this is the <strong>optimal window for prevention</strong> — obtain the 4-hour concentration, plot it, and when indicated start NAC as early as possible, ideally within 8 hours. <strong>Presentation after 8 hours is not a reason to withhold NAC</strong>: it remains beneficial later, and even in established acute liver failure.</p>`},
+   2:{t:"Stage II — injury declares itself",w:"24 – 72 hours · occurs in fewer than 5% of overdoses",b:`
+     <p>AST rises first — most commonly beginning within 24 h, near-universal by 36 h, and as early as 12 h in the most severely poisoned. ALT follows shortly after. Symptoms track the severity of injury: right upper quadrant pain, vomiting, tenderness.</p>
+     <p>AST abnormalities <strong>always precede</strong> functional failure (prolonged PT/INR, rising bilirubin, hypoglycaemia, encephalopathy, acidosis). Protein adducts become detectable within hours of ingestion and peak alongside AST.</p>
+     <p style="margin-bottom:0"><strong>What to do:</strong> repeat AST; if elevated, add INR and creatinine and continue NAC past the nominal protocol length. A doubling of AST in under 8 hours predicts severity.</p>`},
+   3:{t:"Stage III — maximal hepatotoxicity",w:"72 – 96 hours · the window for transplantation",b:`
+     <p>Fulminant hepatic failure with encephalopathy and coma. Transaminases above 10,000 IU/L are common even without failure — and are <em>far less important</em> than PT/INR, glucose, lactate, creatinine and pH, which determine prognosis and treatment.</p>
+     <p>Grade II encephalopathy appears at a median of 72 h after acute overdose; grade IV at a median of 89 h. Grade III patients are at significant risk of cerebral oedema. Death, most often from cerebral oedema or sepsis, is most likely between 72 and 96 h but may be delayed up to 10–14 days.</p>
+     <p style="margin-bottom:0"><strong>What to do:</strong> ICU care, aggressive glucose monitoring, continue IV NAC, apply King's College Criteria, and involve a liver unit — the window for successful transplantation is often under 24 hours.</p>`},
+   4:{t:"Stage IV — recovery",w:"4 days – 2 weeks · complete regeneration",b:`
+     <p>Survivors regenerate a normal liver. Goldfrank's states that <strong>no cases of chronic hepatic dysfunction are reported</strong> among survivors, and Critical Care Toxicology likewise reports no permanent liver damage — reassuring, and worth telling the patient, though it reflects the published follow-up rather than lifelong histological data. In most acute overdoses AST, pH, PT/INR and lactate normalise by day 7; ALT lags behind AST; creatinine may stay elevated beyond a month.</p>
+     <p>Recovery is slower after severe poisoning, and histological abnormalities can persist for months without clinical consequence. Renal failure in survivors generally resolves within a month.</p>
+     <p style="margin-bottom:0"><strong>What to do:</strong> this is also the stage for the conversation that matters most — psychiatric assessment and follow-up. In the Saudi series, 80% of these presentations were suicide attempts.</p>`}
+  };
+  const box=document.getElementById('stageBox'),tabs=document.getElementById('stageTabs');
+  function show(n){
+    const d=D[n];
+    box.innerHTML=`<h5>${d.t}</h5><div class="when">${d.w}</div>${d.b}`;
+    [...tabs.children].forEach(b=>b.classList.toggle('on',b.dataset.s===String(n)));
+  }
+  tabs.addEventListener('click',e=>{const b=e.target.closest('button'); if(b) show(+b.dataset.s);});
+  show(1);
+})();
+
+/* ============ 04 BRANCH ROUTER ============ */
+(function(){
+  const B=[
+   {k:"Acute ingestion, time known",d:"Any ingestion occurring over a period of less than 24 hours, regardless of pattern, with a reliable time from the start of ingestion. Includes patients presenting at any point after ingestion — those arriving before 4 hours simply need to wait for a definitive concentration at ≥4 hours; they are not a different category of patient.",
+    cls:"safe",h:"Use the nomogram",
+    li:["<strong>Definition matters.</strong> The 2023 US/Canada consensus defines an acute ingestion as any ingestion period of <strong>less than 24 hours, whatever the pattern</strong> — a single handful and a series of swallows over an evening are both 'acute'. Only ingestion spread over <em>more than</em> 24 hours is repeated supratherapeutic ingestion. (Older texts, including Goldfrank's, use a narrower 4-hour window; the consensus definition supersedes it for nomogram purposes.)",
+        "<strong>Presenting before 4 hours does not change the category</strong> — the patient is still an acute ingestion. It only means the definitive concentration isn't obtainable yet: wait for ≥4 hours from the start of ingestion before drawing it, or draw an early sample only to confirm ongoing absorption if that changes management (e.g. considering repeat charcoal).",
+        "Draw a paracetamol concentration at 4 h from the <strong>start</strong> of ingestion, or as soon as possible thereafter.",
+        "Plot the <strong>single</strong> value on the 150 line using the <strong>earliest</strong> possible ingestion time.",
+        "On or above the line → start NAC. Below the line, even slightly → no further evaluation or treatment needed for acute paracetamol.",
+        "If the result will not be back before 8 h, start NAC now and stop it later if the level comes back below the line.",
+        "Chronic heavy alcohol use, CYP-inducing drugs and malnutrition do <em>not</em> change this approach — the line is sensitive enough."]},
+   {k:"Time of ingestion unknown",d:"No reliable window, or a window spanning more than 24 hours.",
+    cls:"warn",h:"Measure both paracetamol and AST — and consult toxicology",
+    li:["<strong>AST/ALT abnormal</strong> — treat with NAC regardless of the paracetamol concentration, unless the abnormality is known to represent the patient's own baseline (e.g. documented chronic liver disease with a stable, previously-characterised transaminase level). All sources agree on this qualified version.",
+        "<strong>Sources differ on the concentration threshold.</strong> The 2023 US/Canada consensus treats a supratherapeutic concentration (<strong>≥ 20 mcg/mL</strong>) or abnormal aminotransferases as the trigger. Goldfrank's advises treating any <em>detectable</em> concentration when timing is entirely unknown — the more conservative position.",
+        "When timing is genuinely uncertain, <strong>consult a medical toxicologist rather than picking a number</strong>. This is exactly the scenario the consensus panel flagged for specialist input.",
+        "<strong>Paracetamol undetectable and AST normal</strong> — consequential hepatic injury is not plausible; NAC is unnecessary.",
+        "If any window can be established at all, use its earliest point and return to the nomogram."]},
+   {k:"Repeated supratherapeutic ingestion",d:"Staggered doses, therapeutic misadventure, or 'a bit extra every day for the pain'.",
+    cls:"warn",h:"The nomogram does not apply",
+    li:["Any signs or symptoms of hepatotoxicity → treat and investigate, regardless of the dose history. Most serious cases are symptomatic for over 24 h before diagnosis.",
+        "Asymptomatic and above the dose threshold → measure paracetamol and AST.",
+        "<strong>AST/ALT abnormal → treat</strong>, whatever the paracetamol level — <em>unless the abnormality is known to be the patient's baseline</em> (e.g. pre-existing, stable chronic liver disease), in which case it does not by itself indicate acute paracetamol injury.",
+        "<strong>Paracetamol ≥ 20 mcg/mL → treat</strong> (2023 US/Canada consensus algorithm). Enough substrate remains to generate further NAPQI. Note that Goldfrank's uses a lower, more conservative cut-off of ≥ 10 mcg/mL; if your value falls between 10 and 20 mcg/mL, discuss it rather than guessing.",
+        "Do <em>not</em> confuse this treatment threshold with the NAC <em>stopping</em> threshold of &lt; 10 mcg/mL — they are different decisions at different points in the illness.",
+        "AST normal and paracetamol below threshold → NAC not indicated.",
+        "Higher-risk groups: chronic heavy alcohol use, isoniazid, febrile infants, malnutrition, catabolic post-surgical states, anorexia, AIDS."]},
+   {k:"Extended-release preparation",d:"Modified-release paracetamol, alone or as a bilayer tablet.",
+    cls:"warn",h:"Plot it, but watch for line-crossing",
+    li:["Most of the dose is still absorbed within 4 hours, so a level may be plotted on the nomogram — but <strong>one level is often not enough</strong>.",
+        "<strong>If the 4–12 hour concentration is below the line but above 10 mcg/mL, repeat it in 4–6 hours</strong> before excluding toxicity.",
+        "'Nomogram crossing' — an initial level below the line followed by one above — occurs in up to 10% of <em>immediate</em>-release ingestions too, and there is little evidence it correlates with outcome.",
+        "Australian practice is to treat any ingestion of 10 g or 200 mg/kg and continue NAC if either of two levels is above the line. Reasonable if the product or history is uncertain.",
+        "Co-ingested opioids or antimuscarinics produce the same delayed-absorption problem."]},
+   {k:"Intravenous paracetamol",d:"Ten-fold dosing errors, mg/mL confusion, or the oral product given IV.",
+    cls:"treat",h:"The nomogram is invalid — and there is no agreed treatment threshold",
+    li:["<strong>Consult a medical toxicologist or poison centre for every IV paracetamol overdose.</strong> Definitive management has not been established and cases are managed individually.",
+        "IV dosing produces a high early peak but theoretically exposes the liver to less drug; 4-hour values converge with oral, and hepatotoxicity has occurred with concentrations well below the treatment line.",
+        "<strong>Children:</strong> the 2023 US/Canada consensus advises contacting a poison centre or clinical toxicologist after a single IV dose of <strong>90 mg/kg</strong>, or a cumulative dose <strong>&gt; 150 mg/kg over 24 hours</strong>.",
+        "A threshold of &gt; 60 mg/kg as a single dose is recommended by some toxicologists (and by Goldfrank's) but is <em>not</em> endorsed by the consensus statement. Treat it as one opinion among several, not a rule.",
+        "For repeated therapeutic IV dosing, treat if there is evidence of hepatotoxicity or of accumulation above the concentration expected for the last dose.",
+        "Reported hepatotoxicity after single erroneous doses of 75–150 mg/kg, and after 59–77 mg/kg/day for 3–5 days in severely catabolic patients."]},
+   {k:"Liver failure, no clear history",d:"Acute liver failure or markedly raised transaminases with no ingestion story.",
+    cls:"treat",h:"Assume paracetamol until proven otherwise",
+    li:["Paracetamol is the leading cause of acute liver failure; up to 20% of adult and 50% of paediatric ALF is labelled indeterminate.",
+        "Treat as at risk of paracetamol-induced ALF <strong>even with an undetectable concentration</strong>.",
+        "Retrieve and test the earliest stored blood sample.",
+        "Paracetamol ALF tends to show higher AST/ALT and lower bilirubin than other causes — suggestive, not diagnostic.",
+        "Exclude rhabdomyolysis and hypoperfusion/hypoxic hepatitis; shock liver can look identical."]}
+  ];
+  const btns=document.getElementById('branchBtns'),out=document.getElementById('branchOut');
+  B.forEach((b,i)=>btns.insertAdjacentHTML('beforeend',`<button data-i="${i}"><b>Scenario ${String(i+1).padStart(2,'0')}</b>${b.k} — <span style="color:#5A6C76">${b.d}</span></button>`));
+  btns.addEventListener('click',e=>{
+    const bt=e.target.closest('button'); if(!bt) return;
+    const b=B[+bt.dataset.i];
+    out.innerHTML=`<div class="verdict ${b.cls}"><div class="sub">${b.k}</div><h5>${b.h}</h5><ul>${b.li.map(x=>'<li>'+x+'</li>').join('')}</ul></div>`;
+    out.scrollIntoView({block:'nearest'});
+  });
+})();
+
+/* ============ 05 NOMOGRAM ============ */
+(function(){
+  const svg=document.getElementById('nomo'),V=document.getElementById('nomoVerdict');
+  const W=760,H=470,pl=62,pr=22,pt=18,pb=44;
+  const TMAX=26,YMAX=1200,YMIN=1;
+  const X=t=>pl+(t/TMAX)*(W-pl-pr);
+  const Y=c=>pt+((Math.log10(YMAX)-Math.log10(Math.max(YMIN,c)))/(Math.log10(YMAX)-Math.log10(YMIN)))*(H-pt-pb);
+  let baseLine=150;
+  const tIn=document.getElementById('nTime'),cIn=document.getElementById('nConc'),uIn=document.getElementById('nUnit');
+
+  function poly(base,from,to){let p=[];for(let t=from;t<=to;t+=0.25)p.push(`${X(t).toFixed(1)},${Y(base*Math.pow(0.5,(t-4)/4)).toFixed(1)}`);return p.join(' ');}
+
+  function draw(){
+    const t=parseFloat(tIn.value), raw=parseFloat(cIn.value);
+    const c=uIn.value==='umol'?raw*MCG_PER_UMOL:raw;
+    let s='';
+    // grid
+    for(let d=0;d<=3;d++){
+      for(let m=1;m<10;m++){
+        const v=m*Math.pow(10,d); if(v>YMAX)break;
+        const major=(m===1);
+        s+=`<line x1="${pl}" x2="${W-pr}" y1="${Y(v)}" y2="${Y(v)}" stroke="${major?'#CDD4CC':'#E7EBE4'}" stroke-width="1"/>`;
+        if(major||m===2||m===5)
+          s+=`<text x="${pl-8}" y="${Y(v)+3.5}" text-anchor="end" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="#7C8C93">${v}</text>`;
+      }
+    }
+    for(let h=0;h<=24;h+=4){
+      s+=`<line x1="${X(h)}" x2="${X(h)}" y1="${pt}" y2="${H-pb}" stroke="#E7EBE4"/>`;
+      s+=`<text x="${X(h)}" y="${H-pb+18}" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" fill="#7C8C93">${h}</text>`;
+    }
+    s+=`<text x="${(W)/2}" y="${H-8}" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1.2" fill="#5A6C76">HOURS POST-INGESTION</text>`;
+    s+=`<text transform="translate(15,${(H-pb)/2+40}) rotate(-90)" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="10" letter-spacing="1.2" fill="#5A6C76">PARACETAMOL mcg/mL</text>`;
+    // pre-4h dead zone
+    s+=`<rect x="${pl}" y="${pt}" width="${X(4)-pl}" height="${H-pb-pt}" fill="#16232B" opacity=".045"/>`;
+    s+=`<text x="${(pl+X(4))/2}" y="${pt+16}" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#7C8C93">DO NOT</text>`;
+    s+=`<text x="${(pl+X(4))/2}" y="${pt+27}" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="8.5" fill="#7C8C93">PLOT</text>`;
+    // risk tier lines
+    [[500,'#C81D4E',.35,'500'],[300,'#C81D4E',.28,'300']].forEach(([b,col,op,lab])=>{
+      s+=`<polyline points="${poly(b,4,24)}" fill="none" stroke="${col}" stroke-width="1.2" stroke-dasharray="2 4" opacity="${op+.35}"/>`;
+      s+=`<text x="${X(4.3)}" y="${Y(b)-5}" font-family="IBM Plex Mono,monospace" font-size="9" fill="#C81D4E" opacity=".8">${lab} line</text>`;
+    });
+    // treatment region
+    s+=`<polygon points="${poly(baseLine,4,24)} ${X(24)},${pt} ${X(4)},${pt}" fill="#C81D4E" opacity=".10"/>`;
+    s+=`<polyline points="${poly(baseLine,4,24)}" fill="none" stroke="#C81D4E" stroke-width="2.6"/>`;
+    s+=`<text x="${X(9)}" y="${Y(baseLine*Math.pow(0.5,(9-4)/4))-10}" font-family="IBM Plex Mono,monospace" font-size="10" fill="#C81D4E" letter-spacing=".8">${baseLine} TREATMENT LINE</text>`;
+    if(baseLine===150){
+      s+=`<polyline points="${poly(100,4,24)}" fill="none" stroke="#5A6C76" stroke-width="1" stroke-dasharray="5 4" opacity=".55"/>`;
+      s+=`<text x="${X(19)}" y="${Y(100*Math.pow(0.5,15/4))-6}" font-family="IBM Plex Mono,monospace" font-size="9" fill="#5A6C76" opacity=".8">UK 100 line</text>`;
+    }
+    s+=`<text x="${X(15.5)}" y="${Y(3)}" font-family="IBM Plex Mono,monospace" font-size="10" fill="#5A6C76" letter-spacing=".8">TOXICITY UNLIKELY</text>`;
+    // patient point
+    let verdict;
+    if(!isNaN(t)&&!isNaN(c)&&c>0&&t>=0&&t<=TMAX){
+      const px=X(Math.min(t,TMAX)),py=Y(Math.min(Math.max(c,YMIN),YMAX));
+      const inRange=(t>=4&&t<=24);
+      const col=(inRange&&c>=line(baseLine,t))?'#C81D4E':(inRange?'#0F766E':'#5A6C76');
+      s+=`<line x1="${px}" x2="${px}" y1="${py}" y2="${H-pb}" stroke="${col}" stroke-width="1" stroke-dasharray="2 3" opacity=".55"/>`;
+      s+=`<line x1="${pl}" x2="${px}" y1="${py}" y2="${py}" stroke="${col}" stroke-width="1" stroke-dasharray="2 3" opacity=".55"/>`;
+      s+=`<circle cx="${px}" cy="${py}" r="9" fill="${col}" opacity=".18"/>`;
+      s+=`<circle cx="${px}" cy="${py}" r="5" fill="${col}" stroke="#F7F8F5" stroke-width="1.6"/>`;
+    }
+    svg.innerHTML=s;
+
+    // ---- verdict text ----
+    const lv=line(baseLine,t);
+    const umol=(c*6.62);
+    const fmt=x=>x>=100?x.toFixed(0):x>=10?x.toFixed(1):x.toFixed(2);
+    if(isNaN(t)||isNaN(c)||c<=0){
+      V.className='verdict'; V.innerHTML='<div class="sub">Awaiting input</div><h5>Enter a time and a concentration</h5>'; return;
+    }
+    if(t<2){
+      verdict={cls:'warn',h:'Uninterpretable',sub:'Less than 2 hours post-ingestion',
+        li:['Levels drawn before 2 hours cannot be interpreted — cases exist of low or undetectable early levels with a 4-hour value above the treatment line.','Repeat the concentration at 4 hours and plot that value.','Consider activated charcoal if the ingestion is recent and the airway is protected.']};
+    } else if(t<4){
+      verdict={cls:'warn',h:c<=0.5?'Nondetectable — significant ingestion typically excluded':'Repeat at 4 hours',sub:'Between 2 and 4 hours post-ingestion · not plottable',
+        li:[c<=0.5?'A nondetectable concentration in this window <strong>typically</strong> excludes a significant paracetamol ingestion — but the 2023 consensus pairs this with poison-centre or toxicologist consultation, and it does not cover extended-release products, co-ingested opioids or antimuscarinics, or an unreliable history.':'A detectable level between 2 and 4 hours cannot be interpreted against the nomogram.','No pre-4-hour concentration may be plotted on the nomogram. Only a <em>nondetectable</em> result here carries information; anything else mandates a repeat sample at 4 hours.','Do not reassure the patient or discharge on the basis of a detectable early level.']};
+    } else if(t>24){
+      verdict={cls:'treat',h:'Nomogram no longer applies',sub:'More than 24 hours post-ingestion',
+        li:['Measure AST/ALT as well as the paracetamol concentration.','<strong>Start NAC if aminotransferases are abnormal</strong>, unless known to be the patient\'s own baseline. For the concentration, the 2023 consensus uses a supratherapeutic value (≥ 20 mcg/mL); Goldfrank\'s advises treating any detectable concentration. Take the conservative option and consult toxicology.','NAC still reduces mortality at this stage through non-hepatic mechanisms — late presentation is not a reason to withhold it.','If hepatic failure is evident, contact a liver transplant unit urgently.']};
+    } else if(c>=lv){
+      const ratio=c/lv;
+      const tier=c>=line(500,t)?'500':c>=line(300,t)?'300':'150';
+      const li=['<strong>Start NAC now.</strong> NAC is maximally effective when started within 8 hours; efficacy decreases with delayed treatment. Presentation after 8 hours is not a reason to withhold it.',
+        `Concentration is ${fmt(ratio)}× the ${baseLine} treatment line at this time point.`];
+      if(tier==='500'){
+        li.push('Above the <strong>500 line</strong>: risk of hepatotoxicity despite NAC is roughly 20–40%. This is well inside the consensus <strong>high-risk</strong> category. Published dose-escalation approaches include standard IV plus oral dosing, or 12.5 mg/kg/h if oral is impossible — but the consensus states the literature is insufficient to recommend a specific dose. <strong>Discuss with a medical toxicologist.</strong>');
+        li.push('Check pH, lactate and mental status. EXTRIP\'s dialysis trigger requires the <em>full combination</em> — altered mental status <strong>and</strong> metabolic acidosis <strong>and</strong> elevated lactate together with the concentration — not any single feature in isolation. Discuss with your poison centre if any of these are present so the full picture can be assessed.');
+      } else if(tier==='300'){
+        li.push('On or above the <strong>300 line — the 2023 consensus high-risk line.</strong> Risk of hepatotoxicity despite NAC rises to about 10%. Many clinicians increase the acetylcysteine dose above this line, though the consensus does not specify a regimen. Add lactate and acid–base testing, monitor closely, and consult toxicology.');
+      } else {
+        li.push('Just above the line: the incidence of hepatotoxicity here is low and the risk of hepatic failure or death is far lower still. Treat, but do not alarm the patient.');
+      }
+      if(t>8) li.push('<strong>Beyond 8 hours</strong> — do not delay a single further minute for any test or transfer. Give the loading dose.');
+      li.push('Check AST at baseline, and again before the end of the protocol.');
+      verdict={cls:'treat',h:'On or above the treatment line — treat',sub:`<span class="novalue">${fmt(c)} mcg/mL (${fmt(umol)} µmol/L) at ${t} h · line = ${fmt(lv)} mcg/mL</span>`,li};
+    } else {
+      const li=[`Concentration is ${(100*c/lv).toFixed(0)}% of the ${baseLine} line at this time point.`,
+        'Patients below the treatment line — even marginally — need no further evaluation or treatment for an acute paracetamol ingestion.',
+        'This holds for chronic heavy alcohol use, CYP-inducing medications and malnutrition. The line already accounts for them.',
+        'Reported hepatotoxicity below the line is exceedingly rare: under 1% risk of hepatotoxicity and under 0.05% risk of liver failure.'];
+      if(baseLine===150&&c>=line(100,t)) li.push('Note: this value would be <strong>above</strong> the UK/Ireland 100 line. That policy was adopted for simplicity and extra sensitivity, at the cost of more admissions, more anaphylactoid reactions and higher cost.');
+      li.push('Before discharging, confirm the timing was reliable, there is no staggered ingestion, and psychiatric assessment is arranged.');
+      verdict={cls:'safe',h:'Below the treatment line',sub:`<span class="novalue">${fmt(c)} mcg/mL (${fmt(umol)} µmol/L) at ${t} h · line = ${fmt(lv)} mcg/mL</span>`,li};
+    }
+    V.className='verdict '+verdict.cls;
+    V.innerHTML=`<div class="sub">${verdict.sub}</div><h5>${verdict.h}</h5><ul>${verdict.li.map(x=>'<li>'+x+'</li>').join('')}</ul>`;
+  }
+  [tIn,cIn,uIn].forEach(el=>el.addEventListener('input',draw));
+  document.querySelectorAll('[data-line]').forEach(b=>b.addEventListener('click',()=>{
+    document.querySelectorAll('[data-line]').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); baseLine=+b.dataset.line; draw();
+  }));
+  draw();
+})();
+
+/* ============ 07 NAC CALCULATOR ============ */
+(function(){
+  const wt=document.getElementById('wt'),reg=document.getElementById('regimen'),sc=document.getElementById('scenario'),out=document.getElementById('nacOut');
+  const mL=mg=>(mg/200); // 20% solution = 200 mg/mL
+  const r1=x=>Math.round(x*10)/10;
+  function diluent(w){
+    if(w<20) return [3*w,7*w,14*w];
+    if(w<40) return [100,250,500];
+    return [200,500,1000];
+  }
+  function upd(){
+    let w=parseFloat(wt.value); if(isNaN(w)||w<=0){out.innerHTML='';return;}
+    const capped=w>100;
+    const dw=Math.min(w,100);
+    const D=diluent(dw), r=reg.value, s=sc.value;
+    let rows='',note='',total=0;
+    if(r==='oral'){
+      const load=140*dw, maint=70*dw;
+      total=1330*dw;
+      rows=`<tr><td>Loading dose</td><td class="n">140 mg/kg</td><td class="n">${Math.round(load)} mg</td><td class="n">${r1(mL(load))} mL of 20%</td><td>Dilute to 5% (add 3 mL diluent per 1 mL of 20%) — total ${Math.round(mL(load)*4)} mL</td></tr>
+      <tr><td>Maintenance × 17</td><td class="n">70 mg/kg q4h</td><td class="n">${Math.round(maint)} mg</td><td class="n">${r1(mL(maint))} mL of 20%</td><td>First maintenance dose 4 h after loading; total ${Math.round(mL(maint)*4)} mL each</td></tr>`;
+      note=`Total course <strong>1330 mg/kg = ${Math.round(total/1000*10)/10} g over 72 h</strong> (≈17.5 mg/kg/h). Mix with a soft drink for palatability. If a dose is vomited within 1 hour, repeat it or switch to IV. Antiemetics are reasonable — note one trial linked ondansetron to more transaminase elevation.`;
+    } else if(r==='3bag'){
+      const b1=150*dw,b2=50*dw,b3=100*dw; total=300*dw;
+      let rate3=6.25, b3d=b3, dur3='16 h';
+      if(s==='massive'||s==='hd'){rate3=12.5;b3d=12.5*dw*16;}
+      rows=`<tr><td>Bag 1 — loading</td><td class="n">150 mg/kg / 1 h</td><td class="n">${Math.round(b1)} mg</td><td class="n">${r1(mL(b1))} mL of 20%</td><td>in ${D[0]} mL D5W</td></tr>
+      <tr><td>Bag 2</td><td class="n">50 mg/kg / 4 h</td><td class="n">${Math.round(b2)} mg</td><td class="n">${r1(mL(b2))} mL of 20%</td><td>in ${D[1]} mL D5W (12.5 mg/kg/h)</td></tr>
+      <tr><td>Bag 3</td><td class="n">${rate3===6.25?'100 mg/kg / 16 h':'12.5 mg/kg/h × 16 h'}</td><td class="n">${Math.round(b3d)} mg</td><td class="n">${r1(mL(b3d))} mL of 20%</td><td>in ${D[2]} mL D5W (${rate3} mg/kg/h)</td></tr>`;
+      total=b1+b2+b3d;
+      note=`Standard total <strong>300 mg/kg over 21 h</strong>. Maximum loading dose 15 g, second 5 g, third 10 g.`;
+    } else if(r==='2bag'){
+      const b1=200*dw; let rate2=6.25,b2=100*dw;
+      if(s==='massive'||s==='hd'){rate2=12.5;b2=12.5*dw*16;}
+      rows=`<tr><td>Bag 1</td><td class="n">200 mg/kg / 4 h</td><td class="n">${Math.round(b1)} mg</td><td class="n">${r1(mL(b1))} mL of 20%</td><td>50 mg/kg/h</td></tr>
+      <tr><td>Bag 2</td><td class="n">${rate2===6.25?'100 mg/kg / 16 h':'12.5 mg/kg/h × 16 h'}</td><td class="n">${Math.round(b2)} mg</td><td class="n">${r1(mL(b2))} mL of 20%</td><td>${rate2} mg/kg/h</td></tr>`;
+      total=b1+b2;
+      note=`Two-bag regimens reduced anaphylactoid reactions (4.3% vs 10%) with no difference in hepatotoxicity, and remove one preparation step from a system with a documented 33% error rate.`;
+    } else {
+      const b1=100*dw,b2=200*dw; total=b1+b2;
+      rows=`<tr><td>Bag 1</td><td class="n">100 mg/kg / 2 h</td><td class="n">${Math.round(b1)} mg</td><td class="n">${r1(mL(b1))} mL of 20%</td><td>50 mg/kg/h</td></tr>
+      <tr><td>Bag 2</td><td class="n">200 mg/kg / 10 h</td><td class="n">${Math.round(b2)} mg</td><td class="n">${r1(mL(b2))} mL of 20%</td><td>20 mg/kg/h</td></tr>`;
+      note=`The SNAP 12-hour protocol cut severe anaphylactoid reactions from 31% to 5% in a randomised trial, with similar hepatotoxicity (2% vs 3%). The trial was not powered for equivalence of efficacy — check paracetamol and AST at the end of the infusion before stopping.`;
+    }
+    let flags='';
+    if(capped) flags+=`<div class="warn" style="margin:14px 0 0"><b>Weight capped at 100 kg</b>Doses above have been calculated on 100 kg, not ${w} kg. Patients over 100 kg have equivalent hepatic volume and similar ingested amounts; the IV package insert now caps dosing at 100 kg. Some authorities use 110 kg in obesity and pregnancy. Confirm against your local protocol.</div>`;
+    if(w<20) flags+=`<div class="warn" style="margin:14px 0 0"><b>Small child — fluid matters</b>Diluent volumes above use the paediatric scheme (3 / 7 / 14 mL/kg). Excess free water in children has caused <strong>hyponatraemic seizures</strong>. Some centres use a constant 3% NAC concentration instead. Verify against the package insert table for patients under 40 kg.</div>`;
+    if(s==='hd') flags+=`<div class="warn" style="margin:14px 0 0"><b>Haemodialysis running — specialist supervision required</b>Dialysis clears NAC substantially. EXTRIP recommends continuing NAC at an <em>increased rate</em> during extracorporeal treatment without specifying a figure; the rate of <strong>at least 12.5 mg/kg/h</strong> shown above is the figure recommended by the 2023 US/Canada consensus for haemodialysis. CVVH removes proportionally less and standard dosing is generally unchanged. Manage under toxicology and nephrology supervision.</div>`;
+    if(s==='massive') flags+=`<div class="warn" style="margin:14px 0 0"><b>Toxicologist-directed regimen — not a standard recommendation</b>Evidence supports <em>considering</em> increased NAC in high-risk or massive ingestion, but it is not sufficient to mandate any particular regimen. The intensified rate shown above is one published approach (loading dose then 12.5 mg/kg/h); another is standard IV dosing plus standard oral dosing. None has been formally studied against the standard protocol. <strong>Do not use this output without speaking to a medical toxicologist.</strong></div>`;
+
+    out.innerHTML=`<div class="scroll"><table>
+      <tr><th>Step</th><th>Dose</th><th>Amount</th><th>Volume (20% NAC)</th><th>Preparation</th></tr>${rows}
+      </table></div>
+      <p style="font-size:15px;margin:12px 0 0">${note}</p>
+      <p style="font-family:var(--mono);font-size:12px;color:var(--slate);margin:8px 0 0">Total NAC this course ≈ ${Math.round(total/100)/10} g · calculated on ${dw} kg</p>${flags}`;
+  }
+  [wt,reg,sc].forEach(el=>el.addEventListener('input',upd)); upd();
+})();
+
+/* ============ 08 STOP CHECKLIST ============ */
+(function(){
+  const list=document.getElementById('stopList'),V=document.getElementById('stopVerdict');
+  function upd(){
+    const n=[...list.children].filter(li=>li.classList.contains('done')).length;
+    if(n===4){V.className='verdict safe';V.innerHTML=`<div class="sub">4 of 4 criteria met</div><h5>NAC may be discontinued</h5><p style="margin:0">All ACMT 2026 criteria are satisfied. Recheck nothing further is pending, document the values, and complete psychiatric assessment before discharge.</p>`;}
+    else {V.className='verdict treat';V.innerHTML=`<div class="sub">${n} of 4 criteria met</div><h5>Continue NAC</h5><p style="margin:0">Rising aminotransferases, adverse prognostic markers or a persistent paracetamol concentration all mandate continued infusion at 6.25 mg/kg/h. Stopping "because the protocol finished" is the error this checklist exists to prevent.</p>`;}
+  }
+  list.addEventListener('click',e=>{const li=e.target.closest('li'); if(li){li.classList.toggle('done');upd();}});
+  list.querySelectorAll('li').forEach(li=>{li.tabIndex=0;li.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();li.classList.toggle('done');upd();}});});
+  upd();
+})();
+
+/* ============ 10 SPECIAL POPULATIONS ============ */
+(function(){
+  const P=[
+   ["Pregnancy",`<p>Paracetamol crosses the placenta and fetal concentrations approach maternal levels within hours. Fetal sulfation predominates but declines in the second half of pregnancy, while oxidative metabolism develops later in gestation. <strong>The quantitative contribution of fetal hepatic metabolism to fetal acetaminophen toxicity risk is uncertain</strong> and is drawn from small developmental studies rather than established constants — it does not change management, which follows the standard treatment line and standard NAC indications regardless of gestational age.</p>
+     <p><strong>Do not alter the treatment line for pregnancy.</strong> Available observational evidence supports using the standard treatment line and standard NAC indications in pregnant patients, and pregnancy alone is not a reason to lower the treatment threshold. This chapter has not independently verified a systematic "zero reported cases" claim below the line and does not assert one.</p>
+     <p>Most pregnancies after overdose are uneventful. First-trimester toxicity carries increased risk of spontaneous abortion; fetal demise is described in the second trimester; third-trimester fetal hepatotoxicity is rare and associated only with severe maternal toxicity. The dominant determinants of fetal outcome are <strong>delay to NAC</strong> and young gestational age.</p>
+     <p><strong>Indications and dosing are the same as for a non-pregnant patient.</strong> Many clinicians prefer IV NAC — it bypasses first-pass metabolism and is thought to assure fetal delivery — and the 21-hour IV protocol is the most commonly used in pregnancy worldwide. But <strong>oral NAC is not known to be inferior and is not contraindicated</strong>; treat the route as a practical choice, not a rule. Emergency caesarean is not usually warranted, though it may be considered near term if the mother has substantial hepatic necrosis.</p>
+     <p><em>On labelling:</em> the old FDA A/B/C/D/X pregnancy letter categories were withdrawn and replaced by narrative pregnancy and lactation risk labelling. Consult the current product information rather than a letter grade.</p>
+     <p style="margin-bottom:0"><em>On the public debate:</em> ACMT has affirmed the safety of therapeutic paracetamol in pregnancy. Untreated toxicity remains a far greater threat to the fetus than the antidote.</p>`],
+   ["Children",`<p>Serious hepatotoxicity or death after acute overdose is <strong>extremely rare</strong> in children. Proposed explanations include greater sulfation capacity, proportionally larger hepatic mass, smaller ingested doses, overestimated liquid volumes, and propylene glycol in paediatric elixirs inhibiting CYP2E1.</p>
+     <p>Despite this, a more liberal approach is <strong>not recommended</strong> — no reduction in NAPQI production has been demonstrated in children, and a higher nomogram line is inadequately studied. A 200 mg/kg screening threshold for unintentional ingestion in the under-6s is reasonable.</p>
+     <p>The one group where paediatric toxicity is genuinely well described is <strong>febrile infants receiving repeated supratherapeutic doses</strong>: adult preparations substituted for paediatric ones, over-zealous dosing, or labels not read. Age under 2 years is an independent risk factor.</p>
+     <p style="margin-bottom:0">Children with <strong>myopathies</strong> may also be at greater risk — both reported cases were in intensive care, both under 60 kg, with starvation as a likely contributor.</p>`],
+   ["Alcohol & CYP inducers",`<p>The relationship is genuinely counterintuitive, so separate the questions.</p>
+     <p><strong>Acute co-ingested ethanol is hepatoprotective</strong>, competitively inhibiting CYP2E1 and reducing NAPQI formation — demonstrated in both animals and large retrospective human series.</p>
+     <p><strong>Chronic heavy ethanol use</strong> induces CYP2E1 once the ethanol is cleared, and depletes mitochondrial glutathione. After acute overdose this confers a slightly increased risk that is of little clinical importance, because the treatment line was itself derived from data that included chronic heavy drinkers. <strong>No change to the approach is warranted.</strong></p>
+     <p>Chronic alcohol use plus <em>repeated supratherapeutic</em> dosing is a different and more dangerous combination — although prospective trials of 4 g/day for up to 10 days in chronic drinkers found no clinically relevant transaminase rise versus placebo.</p>
+     <p style="margin-bottom:0"><strong>Isoniazid</strong> induces CYP2E1 and is theoretically concerning. Phenytoin, carbamazepine and phenobarbital do <em>not</em> induce CYP2E1; phenytoin may even be hepatoprotective by increasing glucuronidation. Clinical experience supports no change in approach for any of them.</p>`],
+   ["Obesity & >100 kg",`<p>The IV package insert now caps dosing at a maximum weight of <strong>100 kg</strong>, on the logic that patients above this have equivalent hepatic volume and ingest similar absolute amounts. Some authorities use <strong>110 kg</strong> in obesity and pregnancy, citing paracetamol's low lipid solubility and the dose-relatedness of adverse events.</p>
+     <p>A study comparing patients above and below 100 kg found no excess of adverse drug reactions in heavier patients — but detected ADR rates were far lower than in prospective studies, which throws doubt on the finding.</p>
+     <p style="margin-bottom:0">Dosing to a maximum weight is logical and now reflected in labelling, but has not been adequately studied in obese humans. Use your local protocol and document your reasoning.</p>`],
+   ["Neonates",`<p>Both IV and oral NAC have been used safely, including in preterm newborns, with no adverse events observed. The elimination half-life of NAC in preterm neonates is about <strong>11 hours</strong>, versus 5.6 hours in adults.</p>
+     <p>IV administration is preferred because it assures antidotal delivery. Published paediatric infant regimens exist — for example 3 mL/kg/h of 50 mg/mL NAC for 1 h, then 2 mL/kg/h of 6.25 mg/mL for 4 h, then 1 mL/kg/h of 6.25 mg/mL for 16 h, in 5% glucose or 0.9% sodium chloride.</p>
+     <p><strong>Free water is the hazard.</strong> Avoid excessive dilution volumes; hyponatraemia and seizures have resulted. Avoid the effervescent oral tablet in small children and anyone on sodium restriction — each 2.5 g tablet carries 438 mg of sodium, roughly 7 g of sodium in the first treatment day for a 60 kg patient.</p>
+     <p style="margin-bottom:0">Exchange transfusion has been used in a neonate after maternal overdose, removing a portion of the drug with a rebound afterwards.</p>`],
+   ["Renal & hepatic failure",`<p><strong>AKI</strong> after acute overdose is usually acute tubular necrosis from locally generated NAPQI. It occurs in under 1% overall, in up to 25% of those with significant hepatotoxicity, and 50–80% of those in hepatic failure. Creatinine rises 2–5 days after ingestion, peaks days 5–7, and normalises over about a month. Isolated mild AKI without transaminase elevation is possible but rare.</p>
+     <p>Note that <strong>NAC lowers the measured creatinine</strong>. The best-supported explanation is <em>negative interference with certain enzymatic creatinine assays</em>, producing a falsely low result — not suppression of creatinine synthesis, as older texts including Critical Care Toxicology state. Either way the practical consequence is the same: a rise above 10% of baseline during NAC should be treated as potentially indicating renal impairment, and rechecked. Ask your laboratory which creatinine method it uses.</p>
+     <p>NAC's role in treating established paracetamol AKI is unclear: a small benefit in animals when given early, little effect in human retrospective series, but no evidence of harm.</p>
+     <p style="margin-bottom:0"><strong>Liver dialysis devices</strong> (MARS, Prometheus, single-pass albumin dialysis) improve encephalopathy, cerebral blood flow, haemodynamics and intracranial pressure, but meta-analysis shows no mortality benefit across causes of ALF. Reasonable as a bridge in patients meeting transplant or high-mortality criteria, where available.</p>`]
+  ];
+  const tabs=document.getElementById('popTabs'),box=document.getElementById('popBox');
+  P.forEach((p,i)=>tabs.insertAdjacentHTML('beforeend',`<button data-i="${i}" class="${i===0?'on':''}" role="tab">${p[0]}</button>`));
+  function show(i){box.innerHTML=P[i][1];[...tabs.children].forEach((b,j)=>b.classList.toggle('on',j===i));}
+  tabs.addEventListener('click',e=>{const b=e.target.closest('button'); if(b) show(+b.dataset.i);});
+  show(0);
+})();
+
+/* ============ 11 KCC — explicit AND/OR structure ============ */
+(function(){
+  const ids=['kPh','kLac','kCr','kInr','kEnc'],out=document.getElementById('kccOut');
+  function upd(){
+    const ph=parseFloat(kPh.value),lac=parseFloat(kLac.value),cr=parseFloat(kCr.value),inr=parseFloat(kInr.value),enc=parseInt(kEnc.value,10);
+    const phMet=ph<7.30;
+    const a=cr>3.3,b=inr>6.5,c=enc>=3;
+    const pathwayB=a&&b&&c;
+    const lacMet=lac>3.0;
+    const met=phMet||pathwayB;
+    const mark=v=>v?'<strong style="color:#C81D4E">MET</strong>':'<span style="color:#5A6C76">not met</span>';
+    const box=(title,logic,body,satisfied)=>`<div style="border:1px solid ${satisfied?'#C81D4E':'var(--hair)'};background:${satisfied?'#FFF5F7':'#fff'};border-radius:2px;padding:11px 13px;margin-bottom:9px">
+        <div style="font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:${satisfied?'#C81D4E':'var(--slate)'};margin-bottom:7px">${title} · ${logic}</div>${body}</div>`;
+    const B=`<ul style="margin:0;padding-left:19px;font-size:15px">
+        <li>${mark(a)} — Creatinine &gt; 3.3 mg/dL (≈ 300 µmol/L)</li>
+        <li style="font-family:var(--mono);font-size:11px;color:var(--slate);list-style:none;margin-left:-19px;padding-left:2px">AND</li>
+        <li>${mark(b)} — INR &gt; 6.5 (PT &gt; 100 s)</li>
+        <li style="font-family:var(--mono);font-size:11px;color:var(--slate);list-style:none;margin-left:-19px;padding-left:2px">AND</li>
+        <li>${mark(c)} — Grade III–IV encephalopathy</li>
+      </ul>
+      <p style="margin:9px 0 0;font-size:13.5px;color:var(--slate)">All three are required together. Any one or two of them alone does <strong>not</strong> satisfy the criteria.</p>`;
+    const A=`<ul style="margin:0;padding-left:19px;font-size:15px"><li>${mark(phMet)} — Arterial pH &lt; 7.30 after adequate fluid resuscitation</li></ul>
+      <p style="margin:9px 0 0;font-size:13.5px;color:var(--slate)">This criterion stands alone. The original 1989 description assessed pH at 24 h post-ingestion; contemporary use generally applies the pH criterion whenever it is met after adequate fluid resuscitation, without treating 24 h as a rigid gate. Correct hypovolaemia before interpreting the result.</p>`;
+    const L=`<ul style="margin:0;padding-left:19px;font-size:15px"><li>${mark(lacMet)} — Lactate &gt; 3.0 mmol/L after fluid resuscitation (or &gt; 3.5 mmol/L early, before resuscitation)</li></ul>
+      <p style="margin:9px 0 0;font-size:13.5px;color:var(--slate)">Lactate is a <strong>later modification</strong> to the original criteria, not part of them. Timing and resuscitation state change its meaning entirely, so it is shown separately here. A raised lactate should prompt escalation and transplant-centre discussion on its own merits.</p>`;
+    const grid=box('Pathway A','satisfies criteria alone',A,phMet)
+              +`<div style="text-align:center;font-family:var(--mono);font-size:12px;letter-spacing:.18em;color:var(--napqi);margin:-2px 0 9px">— OR —</div>`
+              +box('Pathway B','all three required together',B,pathwayB)
+              +box('Lactate modification','separate — not part of the original criteria',L,lacMet);
+    if(met){
+      out.className='verdict treat';
+      out.innerHTML=`<div class="sub">${phMet&&pathwayB?'Both pathways satisfied':phMet?'Pathway A satisfied':'Pathway B satisfied'}</div>
+      <h5>King's College Criteria met — arrange urgent transplant-centre assessment</h5>${grid}
+      <p style="margin:4px 0 0;font-size:15px">Meeting the criteria mandates <strong>urgent assessment at a transplant centre</strong>; it is not itself a decision to transplant. Survival without transplantation among patients meeting KCC has <strong>improved substantially since the criteria were first described</strong>, with modern supportive care and prolonged NAC — treat KCC as a trigger for urgent referral, not as a deterministic mortality threshold, and do not quote a specific survival percentage without a primary source. Continue IV NAC, involve a liver unit now, manage in ICU with laboratory reassessment every few hours as the clinical condition dictates, and remember the transplant window is often under 24 hours.</p>`;
+    } else {
+      out.className='verdict safe';
+      out.innerHTML=`<div class="sub">Neither pathway satisfied</div>
+      <h5>Transplant criteria not currently met</h5>${grid}
+      <p style="margin:4px 0 0;font-size:15px"><strong>KCC supports identification of patients requiring urgent transplant-centre assessment; failure to meet KCC does not indicate safety.</strong> Its sensitivity in the cited cohort was only 47%. Other flags should still prompt escalation and a transfer discussion: a rising lactate (&gt; 3.3 mmol/L was 91% sensitive for death or transplant in one cohort), APACHE II &gt; 12, or a <strong>SOFA score &gt; 7 within the first 96 hours after acute overdose</strong>, which predicted increased mortality with 100% sensitivity and 74–77% specificity in a separate analysis. Note that the SOFA &gt; 12 figure in the table opposite comes from a different cohort and a different endpoint — always pair a cutoff with its validation population, timing and outcome. <strong>Reassess frequently:</strong> in evolving or established acute liver failure, laboratory monitoring is repeated every few hours according to clinical condition, in an ICU or liver centre — not once daily.</p>`;
+    }
+  }
+  ids.forEach(i=>document.getElementById(i).addEventListener('input',upd)); upd();
+})();
+
+/* ============ 12 QUIZ ============ */
+(function(){
+  const Q=[
+   {s:"A 19-year-old woman ingests an unknown number of paracetamol tablets. The ingestion was witnessed and the timing is exact, the laboratory result is reliable, and this is a standard acute ingestion managed on the 150 line. She is well, and her level at 4 hours is 130 mcg/mL. What do you do?",
+    o:["Start NAC — she is within a whisker of the line","No NAC; she is below the treatment line and needs no further paracetamol treatment","Repeat the level at 8 hours and decide then","Start NAC only if she admits to more than 10 g"],
+    a:1,
+    e:"Below the line means no further evaluation or treatment for acute paracetamol ingestion. The 150 line already sits 25% below the original discriminatory line, and reported hepatotoxicity below it is exceedingly rare (&lt;1% hepatotoxicity, &lt;0.05% liver failure). Note the qualifiers built into this stem: witnessed exact timing, a reliable assay, a standard acute ingestion. Strip any of those away — an uncertain clock, an extended-release product, a co-ingested opioid or antimuscarinic, a value sitting a whisker below the line — and the question stops being about the nomogram and becomes a question about uncertainty, where the answer is to repeat the level or consult. What she does still need either way is a psychiatric assessment."},
+   {s:"A 34-year-old man with chronic heavy alcohol use presents 5 hours after ingesting 20 g of paracetamol. His level plots just below the 150 line. Does his alcohol history change your management?",
+    o:["Yes — use the 100 line for high-risk patients","Yes — treat empirically regardless of the level","No — the treatment line is adequately sensitive in chronic heavy ethanol users","No, but he needs a 48-hour NAC course if treated"],
+    a:2,
+    e:"There is no credible evidence that chronic heavy alcohol use should alter the approach after an acute overdose. The treatment line was developed using clinical data that included chronic heavy drinkers, and nomogram failures attributable to alcohol are not documented. The two-tiered high-risk approach was abandoned in the UK, and its replacement raised admissions, anaphylactoid reactions and cost."},
+   {s:"A patient has completed 21 hours of IV NAC. AST is 340 IU/L and falling from a peak of 620. INR is 1.4. Paracetamol is 14 mcg/mL. What is the correct action?",
+    o:["Stop NAC — the protocol is complete and the AST is falling","Stop NAC but repeat bloods in 12 hours","Continue NAC — the APAP concentration is 14 mcg/mL, so the <10 mcg/mL stopping criterion has not been met","Stop NAC and start oral NAC for 72 hours"],
+    a:2,
+    e:"ACMT (2026) requires <em>all four</em> criteria before stopping: paracetamol &lt; 10 mcg/mL, transaminases at baseline or fallen 25–50% from peak, INR &lt; 2.0, and improving prognostic markers. The transaminase and INR criteria are satisfied here, but the concentration is 14 mcg/mL — above the &lt;10 mcg/mL threshold — so the stopping rule is not yet met on that criterion alone, regardless of how well the other three look. Continue the 6.25 mg/kg/h infusion and recheck."},
+   {s:"A 25-year-old presents 3 hours after a witnessed ingestion she reports as roughly 40 g. Her level at 3 hours is 240 mcg/mL. What is the single most important interpretation?",
+    o:["Above the 4-hour line, so treat immediately based on this value","The value cannot be plotted at 3 hours; obtain a 4-hour concentration, and discuss promptly with poison control because this is a high-risk reported ingestion","Below the extrapolated 3-hour line, so no treatment","Give charcoal and discharge if the 4-hour level is below the line"],
+    a:1,
+    e:"No pre-4-hour concentration may be plotted, and a detectable level in the 2–4 hour window is not actionable. The consensus empirical-NAC-while-awaiting-a-level rule is tied to <strong>timing, not dose alone</strong>: it applies when a high reported dose (&gt;200 mg/kg or &gt;10 g) means the 4-hour result would arrive too late (beyond 8 hours), or when a sample is drawn more than 24 hours after ingestion in a symptomatic patient. Neither condition is met here — she is 3 hours post-ingestion, and a valid 4-hour level can be obtained and resulted well within the 8-hour window. <strong>The ≥30 g \"high-risk ingestion\" definition governs how aggressively you dose NAC once treatment is indicated, and whether to consider charcoal, extended monitoring or dialysis — it is not, on its own, a separate trigger to start NAC before a timely level is even available.</strong> So the reported ~40 g dose does not by itself justify starting NAC at 3 hours; it justifies obtaining the 4-hour concentration promptly, considering activated charcoal, and discussing the case with poison control given the high-risk history. Treatment is then decided from that 4-hour value, escalating the NAC regimen if it lands in the high-risk range. Reserve dose-based empirical NAC for cases where an 8-hour result genuinely cannot be obtained in time."},
+   {s:"An unresponsive patient arrives with a paracetamol level of 1050 mcg/mL, pH 7.14 and lactate 9 mmol/L, 2 hours after ingesting an estimated 100 g. NAC is running. Beyond NAC, what should you arrange?",
+    o:["Fresh frozen plasma to correct the coagulopathy","Urgent haemodialysis, continuing IV NAC at ≥12.5 mg/kg/h throughout","Immediate liver transplant listing","Repeat activated charcoal every 4 hours"],
+    a:1,
+    e:"With NAC already running, the EXTRIP indication is a concentration &gt; 900 mcg/mL <em>together with the full triad</em> of altered mental status <strong>and</strong> metabolic acidosis <strong>and</strong> elevated lactate — all three present here, not just one. (The &gt; 1000 mcg/mL figure applies on concentration alone only when NAC has <strong>not</strong> been administered; do not quote it as an unconditional threshold.) Urgent intermittent haemodialysis is appropriate, continuing IV NAC at an <em>increased</em> rate throughout — EXTRIP says so without giving a number, while the 2023 US/Canada consensus specifies <strong>at least 12.5 mg/kg/h during haemodialysis</strong>. FFP is wrong: it improves the number without improving the liver and destroys prognostic information."},
+   {s:"A 3-year-old boy has been given adult paracetamol suppositories, roughly 130 mg/kg/day for four days, and is now vomiting with right upper quadrant tenderness. His paracetamol level is undetectable. What next?",
+    o:["No NAC — the level is undetectable so the drug has cleared","Plot the level on the nomogram from the last dose","Obtain AST/ALT now and treat with NAC if either is abnormal; discuss promptly with poison control","Observe for 24 hours and recheck the level"],
+    a:2,
+    e:"The nomogram does not apply to repeated supratherapeutic ingestion. With the paracetamol concentration already undetectable, the decision here hinges on <strong>AST/ALT</strong> — treat if either is abnormal, unless a prior baseline confirms that abnormality predates this exposure (uncommon in a well 3-year-old, but worth asking about). A repeat paracetamol concentration is not a routine part of this decision; it becomes relevant only if exposure is ongoing or the history is uncertain, in which case a repeat value ≥ 20 mcg/mL (2023 US/Canada consensus algorithm; Goldfrank's uses a more conservative ≥ 10 mcg/mL) is also an indication for NAC. Note that this child's exposure has already continued beyond 48 hours at roughly 130 mg/kg/day, which independently meets the &gt;48-hour RSTI assessment threshold (≥ 100 mg/kg/day) — so laboratory evaluation is indicated on the dosing history alone, before the symptoms are even considered. Symptoms and a significant repeated-exposure history are why you obtain the labs urgently and involve poison control rather than waiting passively — but they escalate the workup, they don't substitute for the biochemical criterion. In a small child, involve toxicology regardless of the initial result."}
+  ];
+  const wrap=document.getElementById('quiz'),score=document.getElementById('quizScore');
+  let done=0,right=0;
+  Q.forEach((q,i)=>{
+    const el=document.createElement('div'); el.className='q';
+    el.innerHTML=`<div class="stem"><b>Case ${String(i+1).padStart(2,'0')}</b>${q.s}</div>
+      <div class="opts">${q.o.map((o,j)=>`<button data-j="${j}">${o}</button>`).join('')}</div>
+      <div class="expl">${q.e}</div>`;
+    el.querySelector('.opts').addEventListener('click',e=>{
+      const b=e.target.closest('button'); if(!b||el.dataset.done) return;
+      el.dataset.done='1'; done++;
+      const j=+b.dataset.j;
+      if(j===q.a) right++;
+      [...el.querySelectorAll('.opts button')].forEach((x,k)=>{
+        if(k===q.a) x.classList.add('right');
+        else if(k===j) x.classList.add('wrong');
+      });
+      el.querySelector('.expl').classList.add('show');
+      score.textContent=`${right} / ${done} correct`;
+    });
+    wrap.appendChild(el);
+  });
+})();
+
+onScroll();
+</script>
+</body>
+</html>
